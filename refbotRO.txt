@@ -1,0 +1,81 @@
+Inteligența artificială (AI) se află la baza multor sectoare de activitate care au îmbrățișat noile tehnologii informaționale [1].
+În timp ce rădăcinile AI se remarcă în urmă cu câteva decenii în urmă, există un consens clar cu privire la importanța supremă prezentată în prezent de mașinile inteligente dotate cu capacități de învățare, raționament și adaptare.
+În virtutea acestor capacități, metodele de IA obțin niveluri de performanță fără precedent atunci când învață să rezolve sarcini de calcul din ce în ce mai complexe, făcându-le esențiale pentru dezvoltarea viitoare a societății umane [2]. Sofisticarea sistemelor alimentate de AI a crescut în ultima perioadă într-o asemenea măsură încât aproape nici o intervenție umană nu este necesară pentru proiectarea și implementarea lor.
+Atunci când deciziile derivate din astfel de sisteme afectează în cele din urmă viața oamenilor (cum ar fi, de exemplu, medicina, legea sau apărarea), apare o nevoie emergentă de a înțelege modul în care astfel de decizii sunt furnizate prin metode AI [3].
+
+În timp ce primele sisteme de IA au fost ușor de interpretat, ultimii ani au asistat la creșterea sistemelor de decizie opace, cum ar fi rețelele neuronale profunde (DN).
+Succesul empiric al modelelor Deep Learning (DL) precum DNN provine dintr-o combinație de algoritmi de învățare eficienți și spațiul lor parametric imens. Ultimul spațiu cuprinde sute de straturi și milioane de parametri, ceea ce face ca DNN-urile să fie considerate modele complexe de cutii negre [4].
+Opusul negativității este transparența, adică căutarea unei înțelegeri directe a mecanismului prin care funcționează un model [5].
+
+Pe măsură ce modelele de învățare automată cu cutie neagră (ML) sunt utilizate din ce în ce mai mult pentru a face predicții importante în contexte critice, cererea de transparență crește din partea diferitelor părți interesate din AI [6].
+Pericolul constă în crearea și utilizarea deciziilor care nu sunt justificate, legitime sau care pur și simplu nu permit obținerea de explicații detaliate despre comportamentul lor [7].
+Explicațiile care susțin rezultatul unui model sunt cruciale, de exemplu, în medicina de precizie, unde experții necesită mult mai multe informații din model decât o simplă predicție binară pentru susținerea diagnosticului lor [8]. Alte exemple includ vehicule autonome în transport, securitate și finanțe, printre altele.
+
+În general, oamenii sunt reticenți să adopte tehnici care nu sunt direct interpretabile, tratabile și demne de încredere [9], având în vedere cererea tot mai mare de IA etică [3]. Se obișnuiește să ne gândim că, concentrându-ne exclusiv pe performanță, sistemele vor fi din ce în ce mai opace. Acest lucru este adevărat în sensul că există un compromis între performanța unui model și transparența acestuia [10]. Cu toate acestea, o îmbunătățire a înțelegerii unui sistem poate duce la corectarea deficiențelor sale. Atunci când se dezvoltă un model ML, luarea în considerare a interpretabilității ca un motor suplimentar de proiectare poate îmbunătăți implementabilitatea acestuia din 3 motive:
+• Interpretabilitatea ajută la asigurarea imparțialității în luarea deciziilor, adică la detectarea și, în consecință, la corectarea prejudecății din setul de date de instruire.
+• Interpretabilitatea facilitează furnizarea de robustețe prin evidențierea perturbărilor potențiale contradictorii care ar putea schimba predicția.
+• Interpretabilitatea poate acționa ca o asigurare că numai variabilele semnificative deduc rezultatul, adică garantând că există o cauzalitate veridică subiacentă în raționamentul model.
+
+Una dintre problemele care împiedică stabilirea unor temeiuri comune este utilizarea incorectă a interpretabilității și explicabilității în literatură. Există diferențe notabile între aceste concepte. Pentru început, interpretabilitatea se referă la o caracteristică pasivă a unui model care se referă la nivelul la care un model dat are sens pentru un observator uman. Această caracteristică este exprimată și ca transparență. Prin contrast, explicabilitatea poate fi privită ca o caracteristică activă a unui model, denotând orice acțiune sau procedură luată de un model cu intenția de a clarifica sau detalia detaliile funcțiilor sale interne.
+
+Pentru a rezuma cea mai frecvent utilizată nomenclatură, în această secțiune clarificăm distincția și asemănările dintre termenii des folosiți în comunitățile etice AI și XAI [3].
+• Înțelegerea (sau echivalent, inteligibilitatea) denotă caracteristica unui model pentru a face un om să înțeleagă funcția sa - modul în care funcționează modelul - fără a fi necesară explicarea structurii sale interne sau a mijloacelor algoritmice prin care modelul procesează datele intern [8].
+• Înțelegere: atunci când este conceput pentru modele ML, înțelegerea se referă la capacitatea unui algoritm de învățare de a-și reprezenta cunoștințele învățate într-un mod ușor de înțeles de om [9].
+Această noțiune de înțelegere a modelului provine din postulatele lui Michalski [2], care afirma că „rezultatele inducerii computerizate ar trebui să fie descrieri simbolice ale entităților date, semantic și structural similare cu cele pe care le-ar putea produce un expert uman observând aceleași entități.
+Componentele acestor descrieri ar trebui să fie de înțeles ca „bucăți” unice de informații, direct interpretabile în limbaj natural și ar trebui să raporteze conceptele cantitative și calitative într-un mod integrat ”.
+Având în vedere cuantificarea sa dificilă, comprehensibilitatea este în mod normal legată de evaluarea complexității modelului [7].
+• Interpretabilitate: este definită ca abilitatea de a explica sau de a furniza sensul în termeni de înțeles unui om.
+• Explicabilitate: Explicabilitatea este asociată cu noțiunea de explicație ca o interfață între oameni și un factor de decizie care este, în același timp, atât un proxy precis al factorului de decizie, cât și de înțeles de oameni [7].
+• Transparență: un model este considerat transparent dacă este de înțeles de la sine. Deoarece un model poate prezenta diferite grade de înțelegere, modelele transparente din secțiunea 3 sunt împărțite în trei categorii: modele simulabile, modele descompozabile și modele algoritmic transparente [5].
+
+
+În toate definițiile de mai sus, înțelegerea apare ca cel mai esențial concept în XAI [3].
+Atât transparența, cât și interpretabilitatea [5] sunt strâns legate de acest concept: în timp ce transparența se referă la caracteristica unui model de a fi, pe cont propriu, de înțeles pentru un om, înțelegerea măsoară gradul în care un om poate înțelege o decizie luată de un model. Înțelegerea este, de asemenea, legată de înțelegere prin faptul că se bazează pe capacitatea publicului de a înțelege cunoștințele conținute în model. Una peste alta, înțelegerea este o chestiune dublă: înțelegerea modelului și înțelegerea umană. Acesta este motivul pentru care definiția XAI dată în secțiunea 2.2 se referă la conceptul de audiență, întrucât abilitățile cognitive și obiectivul urmărit al utilizatorilor modelului trebuie să fie luate în considerare împreună cu inteligibilitatea și înțelegerea modelului utilizat . Acest rol proeminent asumat de înțelegere face din conceptul de audiență piatra de temelie a XAI, după cum vom elabora în detaliu.
+
+Deși s-ar putea considera că depășește domeniul de aplicare al acestei lucrări, merită remarcat discuția purtată în jurul teoriilor generale ale explicației în domeniul filosofiei [3].
+S-au făcut multe propuneri în acest sens, sugerând necesitatea unei teorii generale, unificate, care să aproximeze structura și intenția unei explicații [4].
+Cu toate acestea, nimeni nu a rezistat criticii atunci când a prezentat o astfel de teorie generală [9].
+Deocamdată, gândul cel mai convenit îmbină diferite abordări ale explicațiilor extrase din diverse discipline de cunoaștere.
+O problemă similară se găsește la abordarea interpretabilității în AI [2].
+Din literatură se pare că nu există încă un punct comun de înțelegere cu privire la ce sunt interpretabilitatea sau explicabilitatea.
+Cu toate acestea, multe contribuții susțin realizarea unor modele și tehnici interpretabile care să permită explicabilitatea [10].
+
+Pentru a arunca o lumină asupra acestei lipse de consens, ar putea fi interesant să plasați punctul de plecare de referință la definiția termenului Inteligență artificială explicabilă (XAI) dată de D Gunning în [7]:
+„XAI va crea o suită de tehnici de învățare automată care le permite utilizatorilor umani să înțeleagă, să aibă încredere în mod adecvat și să gestioneze în mod eficient generația emergentă de parteneri inteligenți artificial”.
+
+
+Această definiție reunește două concepte (înțelegere și încredere) care trebuie abordate în prealabil [1].
+Cu toate acestea, îi lipsește să ia în considerare alte scopuri care motivează necesitatea unor modele de AI interpretabile, cum ar fi cauzalitatea, transferabilitatea, informativitatea, corectitudinea și încrederea [5].
+Vom aprofunda ulterior aceste subiecte, menționându-le aici ca un exemplu de susținere a incompletitudinii definiției de mai sus.
+
+Așa cum este exemplificat prin definiția de mai sus, o definiție completă și completă a explicabilității în AI încă ne alunecă din degete.
+O reformulare mai largă a acestei definiții (de ex. „O inteligență artificială explicabilă este una care produce explicații despre funcționarea sa”) nu ar reuși să caracterizeze pe deplin termenul în cauză, lăsând deoparte aspecte importante precum scopul său.
+Pentru a construi pe deplin, este mai întâi necesară o definiție a explicației.
+
+După cum este extras din Cambridge Dictionary of English Language, o explicație este „detaliile sau motivele pe care cineva le dă pentru a face ceva clar sau ușor de înțeles” [27].
+În contextul unui model ML, acesta poate fi reformulat astfel: „detaliile sau motivele pe care le oferă un model pentru a-și face funcționarea clară sau ușor de înțeles”.
+În acest moment, opiniile încep să divergă.
+În mod inerent derivat din definițiile anterioare, pot fi evidențiate două ambiguități.
+În primul rând, detaliile sau motivele utilizate pentru a explica, sunt complet dependente de publicul căruia îi sunt prezentate.
+În al doilea rând, dacă explicația a lăsat conceptul clar sau ușor de înțeles depinde în totalitate de audiență.
+Prin urmare, definiția trebuie reformulată pentru a reflecta în mod explicit dependența explicabilității modelului de public.
+În acest scop, o definiție reprelucrată ar putea citi astfel:
+Având în vedere un anumit public, explicabilitatea se referă la detaliile și motivele pe care le oferă un model pentru a-și face funcționarea clară sau ușor de înțeles.
+
+Întrucât explicarea, ca argumentare, poate implica ponderarea, compararea sau convingerea unei audiențe cu formalizări bazate pe logică a argumentelor (contra) [28], explicabilitatea ne-ar putea conduce în domeniul psihologiei cognitive și psihologiei explicațiilor [7], deoarece măsurarea dacă ceva a fost înțeles sau pus clar este o sarcină dificilă de evaluat obiectiv.
+Cu toate acestea, măsurarea în ce măsură internele unui model pot fi explicate ar putea fi abordată în mod obiectiv.
+Orice mijloace de reducere a complexității modelului sau de simplificare a rezultatelor acestuia ar trebui considerate ca o abordare XAI.
+Cât de mare este acest salt în termeni de complexitate sau simplitate va corespunde cu cât de explicabil este modelul rezultat.
+O problemă de bază care rămâne nerezolvată este că câștigul de interpretabilitate oferit de astfel de abordări XAI poate să nu fie ușor de cuantificat: de exemplu, o simplificare a modelului poate fi evaluată pe baza reducerii numărului de elemente arhitecturale sau a numărului de parametri ai modelului în sine (așa cum se face adesea, de exemplu, pentru DNN-uri).
+Dimpotrivă, utilizarea metodelor de vizualizare sau a limbajului natural în același scop nu favorizează o cuantificare clară a îmbunătățirilor obținute în ceea ce privește interpretabilitatea.
+Derivarea metricilor generale pentru a evalua calitatea abordărilor XAI rămâne o provocare deschisă care ar trebui să fie sub atenția domeniului în următorii ani.
+Vom discuta în continuare cu privire la această direcție de cercetare în secțiunea 5.
+
+Explicabilitatea este legată de explicabilitatea post-hoc, deoarece acoperă tehnicile utilizate pentru a converti un model neinterpretabil într-un model explicabil.
+În restul acestui manuscris, explicabilitatea va fi considerată ca obiectiv principal de proiectare, deoarece reprezintă un concept mai larg.
+Un model poate fi explicat, dar interpretabilitatea modelului este ceva care vine din proiectarea modelului în sine.
+Având în vedere aceste observații, AI explicabilă poate fi definită după cum urmează:
+Având în vedere un public, o inteligență artificială explicabilă este una care produce detalii sau motive pentru a face funcționarea sa clară sau ușor de înțeles.
+
+
+Această definiție este prezentată aici ca o primă contribuție a prezentării de ansamblu, presupune implicit că ușurința de înțelegere și claritatea vizate de tehnicile XAI pentru modelul din față revine asupra diferitelor scopuri ale aplicației, cum ar fi o mai bună încredere a rezultatelor modelului de către public.

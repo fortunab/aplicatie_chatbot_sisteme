@@ -1,0 +1,81 @@
+Veštačka inteligencija (AI) leži u osnovi mnogih sektora delatnosti koji su prihvatili nove informacione tehnologije [1].
+Iako se korijeni inteligencije vuku još od prije nekoliko decenija, postoji jasan konsenzus o presudnoj važnosti koju danas imaju inteligentne mašine obdarene sposobnostima učenja, rasuđivanja i prilagođavanja.
+Zahvaljujući ovim mogućnostima, metode inteligencije postižu nivoe bez presedana kada uče da rešavaju sve složenije računske zadatke, čineći ih ključnim za budući razvoj ljudskog društva [2]. Sofisticiranost sistema na AI se u poslednje vreme povećala do te mere da gotovo nije potrebna ljudska intervencija za njihov dizajn i primenu.
+Kada odluke proistekle iz takvih sistema na kraju utiču na ljudski život (kao, na primer, u medicini, zakonu ili odbrani), pojavljuje se potreba za razumevanjem kako se takve odluke dostavljaju metodama umetne inteligencije [3].
+
+Iako su prvi sistemi AI bili lako razumljivi, poslednjih godina bili smo svedoci porasta neprozirnih sistema odlučivanja kao što su duboke neuronske mreže (DNK).
+Empirijski uspeh modela dubokog učenja (DL), kao što su DNN, potiče iz kombinacije efikasnih algoritama učenja i njihovog ogromnog parametarskog prostora. Potonji prostor sadrži stotine slojeva i milione parametara, što čini DNN-ove da se smatraju složenim modelima crne kutije [4].
+Suprotno od crne kutije je transparentnost, tj. Potraga za direktnim razumevanjem mehanizma po kome model funkcioniše [5].
+
+Kako se modeli mašinskog učenja (ML) sve više koriste za davanje važnih predviđanja u kritičnom kontekstu, zahtevi za transparentnošću se povećavaju kod različitih aktera u AI [6].
+Opasnost je u stvaranju i korišćenju odluka koje nisu opravdane, legitimne ili jednostavno ne dozvoljavaju dobijanje detaljnih objašnjenja njihovog ponašanja [7].
+Objašnjenja koja podržavaju izlazne podatke modela su presudna, npr. U preciznoj medicini, gde stručnjaci od modela zahtevaju mnogo više informacija od jednostavnog binarnog predviđanja za potporu dijagnozi [8]. Drugi primeri uključuju autonomna vozila u transportu, obezbeđenju i finansijama, između ostalog.
+
+Generalno, ljudi su suzdržani da usvoje tehnike koje se ne mogu direktno interpretirati, izvoditi i kojima se može verovati [9], s obzirom na sve veću potražnju za etičkom umetnom inteligencijom [3]. Uobičajeno je misliti da će fokusiranjem isključivo na performanse sistemi biti sve neprozirniji. Ovo je tačno u smislu da postoji kompromis između performansi modela i njegove transparentnosti [10]. Međutim, poboljšanje razumevanja sistema može dovesti do ispravljanja njegovih nedostataka. Pri razvoju modela ML, razmatranje interpretabilnosti kao dodatnog pokretačkog dizajna može poboljšati njegovu primenljivost iz 3 razloga:
+• Interpretabilnost pomaže u obezbeđivanju nepristrasnosti u donošenju odluka, tj. U otkrivanju i, prema tome, ispravljanju pristrasnosti u skupu podataka o obuci.
+• Interpretabilnost olakšava pružanje robusnosti isticanjem potencijalnih kontradiktornih poremećaja koji bi mogli promeniti predviđanje.
+• Interpretabilnost može delovati kao osiguranje da samo značajne promenljive zaključuju na kraju, tj. Garantuje da u obrazloženju modela postoji osnovna istinita uzročnost.
+
+Jedno od pitanja koje koči uspostavljanje zajedničkih osnova je zamenljiva zloupotreba interpretabilnosti i objašnjivosti u literaturi. Postoje značajne razlike među ovim konceptima. Za početak, interpretabilnost se odnosi na pasivnu karakteristiku modela koja se odnosi na nivo na kojem dati model ima smisla za ljudskog posmatrača. Ova karakteristika se takođe izražava kao transparentnost. Suprotno tome, objašnjivost se može posmatrati kao aktivna karakteristika modela, koja označava bilo koju radnju ili postupak koji model preduzima sa namerom da razjasni ili detaljno objasni svoje unutrašnje funkcije.
+
+Da rezimiramo najčešće korištenu nomenklaturu, u ovom odeljku pojašnjavamo razliku i sličnosti među terminima koji se često koriste u etičkim AI i KSAI zajednicama [3].
+• Razumljivost (ili shodno tome, razumljivost) označava karakteristiku modela da bi čovek razumeo njegovu funkciju - kako model funkcioniše - bez ikakve potrebe za objašnjavanjem njegove unutrašnje strukture ili algoritamskih sredstava kojima model interno obrađuje podatke [8].
+• Razumljivost: Kada je zamišljena za modele ML, razumljivost se odnosi na sposobnost algoritma učenja da svoje naučeno znanje predstavi na čoveku razumljiv način [9].
+Ovaj pojam razumljivosti modela potiče iz postulata Michalskog [2], koji je rekao da „rezultati računarske indukcije treba da budu simbolički opisi datih entiteta, semantički i strukturno slični onima koje bi ljudski stručnjak mogao proizvesti posmatrajući iste entitete.
+Komponente ovih opisa trebalo bi da budu razumljive kao pojedinačni „komadići“ informacija, koji se mogu direktno tumačiti prirodnim jezikom, i trebalo bi da integrišu kvantitativne i kvalitativne koncepte “.
+S obzirom na njegovu tešku kvantifikaciju, razumljivost je obično vezana za procenu složenosti modela [7].
+• Interpretabilnost: Definisana je kao sposobnost objašnjavanja ili pružanja značenja čoveku u razumljivim terminima.
+• Objašnjivost: Objašnjivost je povezana sa pojmom objašnjenja kao interfejsa između ljudi i donosioca odluka koji je istovremeno i tačan proki donosioca odluke i ljudima razumljiv [7].
+• Transparentnost: Model se smatra transparentnim ako je sam po sebi razumljiv. Budući da model može da ima različit stepen razumljivosti, transparentni modeli u odeljku 3 podeljeni su u tri kategorije: simulabilni modeli, modeli koji se mogu rastaviti i algoritamski transparentni modeli [5].
+
+
+U svim gore navedenim definicijama razumljivost se pojavljuje kao najvažniji koncept u KSAI [3].
+I transparentnost i interpretabilnost [5] čvrsto su vezani za ovaj koncept: dok se transparentnost odnosi na karakteristiku modela koji je sam za sebe razumljiv, razumljivost meri stepen do kog čovek može razumeti odluku koju je doneo model. Razumljivost je takođe povezana sa razumljivošću jer se oslanja na sposobnost publike da razume znanje sadržano u modelu. Sve u svemu, razumljivost je dvostrana stvar: razumljivost modela i ljudska razumljivost. To je razlog zašto se definicija KSAI data u odeljku 2.2 odnosi na koncept publike, jer se kognitivne veštine i težnja korisnika modela moraju uzeti u obzir zajedno sa razumljivošću i razumljivošću modela koji se koristi . Ova istaknuta uloga koju preuzima razumljivost čini koncept publike temeljnim kamenom KSAI-a, kao što ćemo dalje detaljno razraditi.
+
+Iako bi se moglo smatrati da je izvan opsega ovog rada, vredi napomenuti raspravu koja se vodila oko opštih teorija objašnjenja u carstvu filozofije [3].
+S tim u vezi je učinjeno mnogo predloga, koji ukazuju na potrebu za opštom, objedinjenom teorijom koja približava strukturu i nameru objašnjenja [4].
+Međutim, niko nije podneo kritiku kada iznosi takvu opštu teoriju [9].
+Za sada se najviše dogovorena misao spaja različitim pristupima objašnjenju iz različitih disciplina znanja.
+Sličan problem se nalazi kada se govori o interpretabilnosti u AI [2].
+Iz literature se čini da još uvek nema zajedničke tačke razumevanja šta su interpretabilnost ili objašnjivost.
+Međutim, mnogi prilozi tvrde da se postižu interpretabilni modeli i tehnike koji omogućavaju objašnjivost [10].
+
+Da bismo osvetlili ovaj nedostatak konsenzusa, možda bi bilo zanimljivo postaviti referentnu polaznu tačku na definiciju pojma Objašnjiva veštačka inteligencija (KSAI) koju je dao D Gunning u [7]:
+„KSAI će stvoriti skup tehnika mašinskog učenja koji omogućava ljudskim korisnicima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera“.
+
+
+Ova definicija okuplja dva koncepta (razumevanje i poverenje) kojima se treba pozabaviti unapred [1].
+Međutim, propušta da uzme u obzir druge svrhe koje motivišu potrebu za interpretabilnim modelima umetne inteligencije, kao što su uzročnost, prenosivost, informativnost, pravičnost i samopouzdanje [5].
+Kasnije ćemo se pozabaviti ovim temama, pominjući ih ovde kao dodatni primer nepotpunosti gornje definicije.
+
+Kao što ilustruje gornja definicija, temeljna, potpuna definicija objašnjivosti u AI i dalje nam izmiče iz prstiju.
+Šira preformulacija ove definicije (npr. „Objašnjiva veštačka inteligencija je ona koja daje objašnjenja o njenom funkcionisanju“) ne bi u potpunosti okarakterisala dotični termin, ostavljajući po strani važne aspekte kao što je njegova svrha.
+Da bi se nadogradila kompletnost, prvo je potrebna definicija objašnjenja.
+
+Izvučeno iz Cambridge Dictionari of English Language, objašnjenje su „detalji ili razlozi koje neko navodi da bi nešto bilo jasno ili lako razumljivo“ [27].
+U kontekstu modela ML, ovo se može preformulisati kao: „detalje ili razloge koje model daje kako bi njegovo funkcionisanje bilo jasno ili lako razumljivo“.
+U ovom trenutku se mišljenja počinju razilaziti.
+Suštinski proistekle iz prethodnih definicija, mogu se ukazati na dve nejasnoće.
+Prvo, detalji ili razlozi korišćeni za objašnjenje u potpunosti zavise od publike kojoj su predstavljeni.
+Drugo, da li je objašnjenje koncept ostavilo jasnim ili lako razumljivim, takođe u potpunosti zavisi od publike.
+Stoga se definicija mora preformulisati da eksplicitno odražava zavisnost objašnjivosti modela od publike.
+U tom cilju, prerađena definicija mogla bi da glasi:
+S obzirom na određenu publiku, objašnjivost se odnosi na detalje i razloge koje model daje kako bi njegovo funkcionisanje bilo jasno ili lako razumljivo.
+
+Budući da objašnjavanje, kao argumentovanje, može uključivati ponderisanje, upoređivanje ili ubeđivanje publike sa formalizacijama (kontra) argumenata zasnovanim na logici [28], objašnjivost bi nas mogla dovesti u područje kognitivne psihologije i psihologije objašnjenja [7], budući da mere da li je nešto jasno ili jasno rečeno, težak je zadatak objektivno proceniti.
+Međutim, merenje u kojoj meri se mogu objasniti unutrašnjosti modela, moglo bi se rešiti objektivno.
+Bilo koja sredstva za smanjenje složenosti modela ili pojednostavljivanje njegovih rezultata treba smatrati KSAI pristupom.
+Koliki je ovaj skok u smislu složenosti ili jednostavnosti, odgovaraće objašnjenju rezultujućeg modela.
+Osnovni problem koji ostaje nerešen je da dobitak interpretabilnosti koji pružaju takvi KSAI pristupi možda neće biti jednostavno kvantifikovati: na primer, pojednostavljenje modela može se proceniti na osnovu smanjenja broja arhitektonskih elemenata ili broja parametara samog modela (što se često pravi, na primer, za DNN).
+Suprotno tome, upotreba metoda vizualizacije ili prirodnog jezika u istu svrhu ne favorizuje jasnu kvantifikaciju postignutih poboljšanja u pogledu interpretabilnosti.
+Izvođenje opštih pokazatelja za procenu kvaliteta KSAI pristupa ostaje i dalje otvoreni izazov koji bi u narednim godinama trebao biti u centru pažnje.
+O ovom pravcu istraživanja ćemo dalje razgovarati u odeljku 5.
+
+Objašnjivost je povezana sa post-hoc objašnjivošću, jer pokriva tehnike korišćene za pretvaranje neintepretabilnog modela u objašnjiv.
+U ostatku ovog rukopisa, objašnjivost će se smatrati glavnim dizajnerskim ciljem, jer predstavlja širi koncept.
+Model se može objasniti, ali interpretabilnost modela je nešto što dolazi od dizajna samog modela.
+Imajući u vidu ova zapažanja, objašnjivi AI se može definisati na sledeći način:
+S obzirom na publiku, veštačka inteligencija koja se može objasniti je ona koja daje detalje ili razloge kako bi njeno funkcionisanje bilo jasno ili lako razumljivo.
+
+
+Ova definicija je ovde postavljena kao prvi doprinos ovom pregledu, implicitno pretpostavlja da se lakoća razumevanja i jasnoća ciljane KSAI tehnikama za model koji se nalazi vraćaju u različite svrhe primene, kao što je veća pouzdanost publike u rezultatima publike.

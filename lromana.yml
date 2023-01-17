@@ -1,0 +1,600 @@
+categories:
+- AI
+- inteligență artificială
+- profil
+- calculatoare
+- știință
+- alimente
+- sport
+- psihologie
+- trivia
+- politică
+- filme
+- istorie
+- sănătate
+- bani
+- bârfe
+- conversații
+- emoție
+
+conversations:
+- - Carduri model pentru raportarea modelelor
+  - Cardurile model pentru raportarea modelului sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții. Mai multe informații (https://arxiv.org/pdf/1810.03993.pdf)
+- - Ce este XAI?
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - LIME
+  - LIME este model-agnostic, ceea ce înseamnă că poate fi aplicat oricărui model de învățare automată. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - Abordările specifice modelului vizează înțelegerea modelului de învățare automată a modelului negru, analizând componentele interne și modul în care acestea interacționează. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - În modelele de învățare profundă, este de ex. este posibil să investigați unitățile de activare și să legați activările interne înapoi la intrare. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - Acest lucru necesită o înțelegere aprofundată a rețelei și nu se adaptează la alte modele. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - Ce este LIME?
+  - Tehnica încearcă să înțeleagă modelul perturbând introducerea eșantioanelor de date și înțelegând modul în care se schimbă predicțiile. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - SHAP
+  - SHAP înseamnă SHPley Additive exPlanations. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - De fapt, înseamnă că predicția făcută de model este calculată pentru toate subseturile cu și fără caracteristică și însumată pentru a obține valoarea Shapley pentru acea caracteristică.
+  - Aplicând proprietățile de corectitudine ale Shapley din teoria jocurilor la AI explicabilă, se poate obține comparația de mai jos. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - cadre
+  - Există multe cadre XAI disponibile, printre care LIME & SHAP sunt cele populare.
+- - Valori Shapley
+  - Valoarea Shapley este un concept de soluție în teoria jocului cooperativ.
+- - Învățarea graficului neuronal
+  - Propagarea etichetelor este o tehnică de învățare semi-supravegheată puternică și flexibilă pe grafice. Mai multe detalii (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Rețelele neuronale, pe de altă parte, au înregistrat dovezi în multe sarcini de învățare supravegheate. Mai multe informații (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Propun un cadru de formare cu un obiectiv regularizat grafic, și anume Mașini Neural Graph, care poate combina puterea rețelelor neuronale și propagarea etichetelor. Mai multe informații (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Permiterea aplicării acestuia la mai multe arhitecturi neuronale Feed-forward NNs, CNNs și LSTM RNNs
+- - Ce este Graph Neural Network?
+  - Graph Neural Network a câștigat o popularitate din ce în ce mai mare în diferite domenii, inclusiv rețele sociale, grafic de cunoștințe, sistem de recomandare și chiar științe ale vieții.
+  - Puterea GNN în modelarea dependențelor dintre noduri într-un grafic permite descoperirea în zona de cercetare legată de analiza graficului.
+  - Să înțelegem mai întâi ce este Graph.
+- - Ce este Graph?
+  - Un grafic este o structură de date formată din două componente, vârfuri și margini.
+- - Ce este GNN?
+  - Rețeaua neuronală grafică este un tip de rețea neuronală care funcționează direct pe structura grafică.
+- - GNN
+  - O aplicație tipică a GNN este clasificarea nodurilor. În esență, fiecare nod din grafic este asociat cu o etichetă și vrem să prezicem eticheta nodurilor fără adevăr de bază.
+- - CML
+  - Să presupunem abordări de învățare care combină în mod eficient inteligența umană cu capacitatea de calcul rapid a mașinii sub termenul Învățare prin cooperare automată.
+  - Un modul de învățare activ decide apoi ce părți ale predicției sunt supuse revizuirii manuale de către adnotatori umani.
+  - Propun o nouă strategie CML în doi pași, atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari.
+- - învățare mecanică cooperativă explicabilă
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru propus pentru învățarea cooperativă prin mașini, nu numai pentru a accelera procesul, ci și pentru a oferi utilizatorilor un astfel de sistem o mai bună înțelegere a performanței modelului lor și de ce eșuează sau reușește.
+- - ML cooperativ explicabil
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Ulterior, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului.
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru de învățare prin cooperare automată propus, nu numai pentru a accelera procesul, ci și pentru a oferi o mai bună înțelegere utilizatorilor unui astfel de sistem cât de performant este modelul lor și de ce eșuează sau reușește.
+- - ce este învățarea mecanică cooperativă explicabilă?
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari.
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului.
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru de învățare prin cooperare automată propus, nu numai pentru a accelera procesul, ci și pentru a oferi o mai bună înțelegere utilizatorilor unui astfel de sistem cât de performant este modelul lor și de ce eșuează sau reușește.
+- - Prostirea LIME și SHAP
+  - Întrucât cutiile negre de învățare automată sunt desfășurate din ce în ce mai mult în domenii precum asistența medicală și justiția penală, se pune un accent din ce în ce mai mare pe construirea de instrumente și tehnici pentru explicarea acestor cutii negre într-un mod interpretabil.
+  - Propun o nouă tehnică de schele care ascunde în mod eficient prejudecățile oricărui clasificator dat, permițând unei entități contradictorii să creeze o explicație dorită arbitrar.
+- - Carduri model pentru raportarea modelelor
+  - Cardurile model pentru raportarea modelelor sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții. Mai multe informații (https://arxiv.org/pdf/1810.03993.pdf)
+- - Model de cărți
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - Raportare model
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - Ce sunt cărțile model?
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - GHID DE ÎNVĂȚARE INTERPRETABILĂ A MAȘINILOR
+  - După explorarea conceptelor de interpretabilitate, veți afla despre modele simple, interpretabile, cum ar fi arborii de decizie, regulile de decizie și regresia liniară. Soluția poate fi găsită (https://www.topbots.com/interpretable-machine-learning/)
+  - Concentrați-vă pe metodele generale de model agnostic pentru interpretarea modelelor de cutie neagră precum importanța caracteristicilor și efectele locale acumulate și explicarea predicțiilor individuale cu valorile Shapley și LIME.
+- - Dincolo de XAI
+  - Soluția / răspunsul pot fi găsite (https://www.ayasdi.com/beyond-explainability-ai-transparency/)
+- - Învățare automată interpretabilă
+  - După explorarea conceptelor de interpretabilitate, veți afla despre modele simple, interpretabile, cum ar fi arborii de decizie, regulile de decizie și regresia liniară.
+  - Concentrați-vă pe metodele generale de model agnostic pentru interpretarea modelelor de cutii negre precum importanța caracteristicilor și efectele locale acumulate și explicarea predicțiilor individuale cu valorile Shapley și LIME.
+- - Explicabilitate vs Interpretabilitate
+  - Interpretabilitatea se referă la măsura în care o cauză și un efect pot fi observate în cadrul unui sistem. Între timp, explicabilitatea este măsura în care mecanica internă a unei mașini sau a unui sistem de învățare profundă poate fi explicată în termeni umani. Mai multe informații (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Interpretabilitate vs explicabilitate
+  - Interpretabilitatea se referă la măsura în care o cauză și un efect pot fi observate în cadrul unui sistem. Între timp, explicabilitatea este măsura în care mecanica internă a unei mașini sau a unui sistem de învățare profundă poate fi explicată în termeni umani. Mai multe informații (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Formă anatomică explicabilă
+  - Cuantificarea modificărilor de formă anatomică se bazează în prezent pe indicii globali scalari, care sunt în mare parte insensibili la modificările regionale sau asimetrice. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - Evaluarea exactă a remodelării anatomice conduse de patologie este un pas crucial pentru diagnosticul și tratamentul multor afecțiuni. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - Abordările de învățare profundă au obținut recent un succes larg în analiza imaginilor medicale, dar le lipsește interpretabilitatea în extragerea caracteristicilor și în procesele de decizie. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - În această lucrare, propunem un nou model de învățare profundă interpretabil pentru analiza formei. În special, exploatăm rețele generative profunde pentru a modela o populație de segmentări anatomice printr-o ierarhie de variabile latente condiționale. Mai multe informații (https://arxiv.org/abs/1907.00058)
+- - Derivarea politicii interpretabile pentru învățarea de consolidare bazată pe sinteza caracteristicilor evolutive
+  - Învățarea prin întărire bazată pe rețeaua neuronală profundă a atras multă atenție și a fost utilizată pe scară largă în aplicații din lumea reală. Cu toate acestea, proprietatea cu cutie neagră își limitează utilizarea de la aplicarea în zone cu mize mari, cum ar fi fabricarea și asistența medicală. Pentru a face față acestei probleme, unii cercetători recurg la algoritmul de generare a politicii de control interpretabil. Ideea de bază este de a utiliza un model interpretabil, cum ar fi programarea genetică bazată pe copaci, pentru a extrage politica din alte moduri de cutie neagră, cum ar fi rețelele neuronale. (https://link.springer.com/article/10.1007/s40747-020-00175-y)
+- - AI auto-explicabilă
+  - AI auto-explicabile sunt capabile să ofere o explicație ușor de înțeles de către om a fiecărei decizii, împreună cu niveluri de încredere atât pentru decizie, cât și pentru explicație.
+- - Evoluția confuziei clasificatorului la nivelul instanței
+  - Complexitatea crescândă a modelelor a dus la o cerere tot mai mare de interpretabilitate a modelelor prin vizualizări. Abordările existente se concentrează în principal pe analiza vizuală a performanței modelului final după antrenament și sunt adesea limitate la măsuri de performanță agregate.
+- - Meta-learning profund XAI
+  - Aceste metode de învățare profundă pot produce rezultate extrem de eficiente în funcție de dimensiunea setului de date, calitatea setului de date, metodele utilizate în extragerea caracteristicilor, setul de hiperparametri utilizat în modelele de învățare profundă, funcțiile de activare și algoritmii de optimizare. Cu toate acestea, există deficiențe importante că modelele actuale de învățare profundă sunt în prezent inadecvate.
+- - Explicarea rețelelor neuronale profunde folosind clusterizarea nesupravegheată
+  - O carte pe care v-o recomand se găsește (https://arxiv.org/pdf/2007.07477.pdf)
+- - Studio interactiv pentru analiza modelului explicativ
+  - Automatizarea analizei explicative a modelelor predictive de învățare automată. Generați explicații de model interactiv avansat sub forma unui site HTML fără server, cu o singură linie de cod. Acest instrument este model agnostic, prin urmare compatibil cu majoritatea modelelor și cadrelor predictive ale cutiei negre.
+- - Raționament automat pentru AI explicabilă
+  - Raționamentul și învățarea au fost considerate trăsături fundamentale ale inteligenței încă de la începutul domeniului inteligenței artificiale, ducând la dezvoltarea domeniilor de cercetare ale raționamentului automat și învățării automate. Această scurtă lucrare este o declarație de poziție non-tehnică care are ca scop stimularea unei discuții despre relația dintre raționamentul automat și învățarea automată și, mai general, între raționamentul automat și inteligența artificială. Sugerăm că apariția noii paradigme a XAI, care reprezintă inteligența artificială eXplainable, este o oportunitate pentru regândirea acestor relații și că XAI poate oferi o provocare măreață pentru viitoarele cercetări privind raționamentul automat.
+- - Arbori de decizie robusti împotriva contradictoriilor
+  - Deși exemplele contradictorii și robustețea modelelor au fost studiate pe larg în contextul modelelor liniare și al rețelelor neuronale, cercetările pe această problemă în modele bazate pe arbori și modul de a face modelele bazate pe arbori robuste împotriva exemplelor contradictorii sunt încă limitate.
+- - Arborele decizional robust
+  - arătăm că modelele bazate pe copaci sunt, de asemenea, vulnerabile la exemple contradictorii și dezvoltăm un algoritm nou pentru a învăța copaci robusti. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_36)
+- - Yellowbrick direct de la Scikit
+  - Yellowbrick extinde API-ul Scikit-Learn pentru a facilita selecția modelului și reglarea hiperparametrului. Mai multe informații (https://www.scikit-yb.org/en/latest/)
+- - Nivelurile cadrului XAI
+  - Nivelul 1 - XAI pentru percepție. Nivelul 1 XAI include explicații despre ceea ce a făcut sau face un sistem AI, precum și deciziile luate de sistem. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivelul 2 - XAI pentru Înțelegere. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivelul 3 - XAI pentru proiecție. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+- - Teoria deciziei întâlnește AI explicabilă
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+  - Agenți fără explicații și agenți explicabili folosind doi algoritmi diferiți ... Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - CIU
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - HAP
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - ExplainX.ai
+  - ExplainX este un model de cadru de explicabilitate / interpretabilitate pentru oamenii de știință de date și utilizatorii de afaceri. Mai multe informații (https://github.com/explainX/explainx)
+- - ExplicațiX
+  - ExplainX este un model de cadru de explicabilitate / interpretabilitate pentru oamenii de știință de date și utilizatorii de afaceri. (https://github.com/explainX/explainx)
+- - Rețele neuronale convoluționale 3D explicabile prin învățarea transformărilor temporale
+  - Demonstrăm că 3TConv învață transformări temporale care permit o interpretare directă. Parametrii temporali pot fi folosiți! Mai multe informații (https://deepai.org/publication/explainable-3d-convolutional-neural-networks-by-learning-temporal-transformations)
+- - Pachetul XAI DALEX
+  - Pachetul DALEX xrayează orice model și ajută la explorarea și explicarea comportamentului său, ajută la înțelegerea modului în care funcționează modelele complexe. Mai multe informații (https://github.com/ModelOriented/DALEX)
+- - AIMLAI
+  - AIMLAI intenționează să devină un loc de discuții pentru apariția unor noi algoritmi interpretabili și module de explicabilitate care mediază comunicarea. Mai multe informații (https://project.inria.fr/aimlai/)
+- - CONSAC
+  - Aplicațiile includ găsirea mai multor puncte de fugă în scenele create de om, adaptarea planurilor la imagini arhitecturale sau estimarea mai multor mișcări rigide în cadrul aceleiași secvențe. Mai multe informații (https://arxiv.org/abs/2001.02643)
+- - Montare robustă multi-model prin consensul probei condiționate
+  - Aplicațiile includ găsirea mai multor puncte de fugă în scenele create de om, adaptarea planurilor la imagini arhitecturale sau estimarea mai multor mișcări rigide în cadrul aceleiași secvențe. (https://arxiv.org/abs/2001.02643)
+- - Cele patru dimensiuni ale diagnosticului AI contestabil
+  - Utilizarea datelor personale de sănătate în diagnosticul AI.
+  - Posibila prejudecată a diagnosticului AI.
+  - Performanța diagnosticului AI.
+  - Organizarea și divizarea muncii de diagnostic.
+- - Când explicațiile mint
+  - Descompunerea profundă a Taylor, propagarea relevanței în funcție de nivel, excitația BP, PatternAttribution, DeepLIFT, Deconv, RectGrad și BP ghidat. Mai multe detalii (https://arxiv.org/abs/1912.09818)
+- - Atac pentru a explica reprezentarea profundă
+  - Modelele vizuale profunde sunt susceptibile la perturbații de magnitudine extrem de redusă ale imaginilor de intrare. Deși sunt elaborate cu atenție, tiparele de perturbare par în general zgomotoase, totuși sunt capabile să efectueze o manipulare controlată a predicțiilor modelului. Mai multe detalii (https://openaccess.thecvf.com/content_CVPR_2020/papers/Jalwana_Attack_to_Explain_Deep_Representation_CVPR_2020_paper.pdf)
+- - Titlu amuzant de la Google
+  - Rețelele neuronale sunt profesori mai productivi decât evaluatorii umani
+  - Mixare activă pentru distilarea cunoștințelor eficiente în date dintr-un model Blackbox
+- - InterpretML de la Microsoft
+  - InterpretML include un nou algoritm de interpretabilitate - Explainable Boosting Machine, care este foarte inteligibil și explicabil. Mai multe detalii despre implementare (https://github.com/interpretml/interpret)
+- - SK-MOEFS
+  - O bibliotecă în Python pentru proiectarea unor modele fuzzy precise și explicabile. Mai multe detalii (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+  - SKMoefs este un modul Python pentru învățarea automată construit special pentru sisteme evolutive fuzzy multi-obiective. Mai multe detalii (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+- - Job de cercetare XAI la Roma
+  - Este necesar să se îmbunătățească cercetarea XAI prin încorporarea de modele ale modului în care oamenii înțeleg explicațiile. Citiți mai multe despre cercetările de la Roma (https://euraxess.ec.europa.eu/jobs/527048)
+- - Centrul de provocări InnoCentive
+  - Vă voi oferi un hyperlink pentru asta! Faceți clic pe (https://www.innocentive.com/ar/challenge/browse?categoryName=Biology)
+- - Lămâi
+  - Limetree NETWORK este un player de rețea de înaltă calitate care poate reda muzică din servicii de streaming, inclusiv ROON. Mai multe detalii (https://arxiv.org/pdf/2005.01427.pdf)
+- - AI explicabilă prin combinația de tensor profund și graficul de cunoștințe
+  - Unul dintre cele mai semnificative progrese realizate în AI în ultimii ani este acuratețea mult îmbunătățită a învățării automate prin învățarea profundă. Cu toate acestea, deoarece învățarea profundă se ocupă de volume imense de date și implică vaste rețele neuronale în procesul de învățare, este adesea dificil de explicat cum sau de ce s-a ajuns la o ieșire chiar dacă inferența a fost corectă. Mai multe detalii (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Deep Tensor
+  - Laboratoarele Fujitsu au dezvoltat Deep Tensor, care învață din date structurate în grafice capabile să descrie fenomene complicate. Mai multe detalii (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Grafic de cunoștințe
+  - Graficul de cunoștințe reprezintă o colecție de descrieri legate de entități - obiecte, evenimente sau concepte. Mai multe informații (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+  - Google Knowledge Graph este o bază de cunoștințe utilizată de Google și de serviciile sale pentru a îmbunătăți rezultatele motorului de căutare cu informații colectate dintr-o varietate de surse.
+- - Teză de master în Cuantificarea performanței algoritmilor de explicabilitate
+  - Vă voi oferi un hyperlink pentru a citi mai multe despre acesta! Vă rugăm să faceți clic pe (https://uwspace.uwaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongQiu.pdf?sequence=5&isAllowed=y)
+- - XAI prin descompunere ierarhică topologică
+  - O descompunere ierarhică topologică este un algoritm pentru descompunerea unui set de date în grupuri mai mici pe baza aplicațiilor iterative. Mai multe detalii (https://math.osu.edu/events/topology-geometry-and-data-seminar-ryan-kramer)
+- - Un mod foarte simplu de a imagina XAI legat de modul în care gândește creierul nostru
+  - Un mod foarte simplu de a imagina XAI legat de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - creier
+  - O manieră foarte simplă de a imagina XAI legată de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - XAI pentru clasificarea COVID-19
+  - Diagnosticarea eficientă și eficientă a pacienților cu COVID-19 cu tip clinic precis este esențială pentru a obține rezultate optime ale pacienților, precum și pentru a reduce riscul de supraîncărcare a sistemului de sănătate. Citiți mai multe despre asta corect (https://www.medrxiv.org/node/82227.external-links.html)
+- - Mai multe instrumente Python XAI
+  - PySS3 este un pachet Python care vă permite să lucrați cu Modelul de clasificare SS3 într-un mod foarte simplu, interactiv și vizual. Rea mai bine (https://pyss3.readthedocs.io/en/latest/)
+- - Interpretarea interpretabilității
+  - Înțelegerea utilizării de către oamenii de știință a datelor a instrumentelor de interpretabilitate pentru învățarea automată. Harmanpreet Kaur, Universitatea din Michigan. Acesta este un articol. Iti sugerez!
+- - gshap
+  - O tehnică în AI explicabilă pentru a răspunde la întrebări mai largi în învățarea automată. Mai multe detalii (https://pypi.org/project/gshap/)
+- - XAI bazat pe învățarea automată
+  - Rezultatele soluției pot fi înțelese de oameni. Acesta contrastează cu conceptul de „cutie neagră” în învățarea automată, unde chiar și proiectanții săi nu pot explica de ce o IA a ajuns la o decizie specifică. Mai multe detalii (https://ieeexplore.ieee.org/document/9007737)
+- - Model Cards for Model Reporting
+  - Cardurile model pentru raportarea modelului sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții. Mai multe informații (https://arxiv.org/pdf/1810.03993.pdf)
+- - Ce este XAI?
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - Ce este Explainable artificial intelligence
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - Explainable artifical intelligence
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - Inteligența artificială explicabilă
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - Ce este inteligența artificială explicabilă
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
+- - LIME
+  - LIME este model-agnostic, ceea ce înseamnă că poate fi aplicat oricărui model de învățare automată. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - Abordările specifice modelului vizează înțelegerea modelului de învățare automată a modelului negru, analizând componentele interne și modul în care acestea interacționează. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - În modelele de învățare profundă, este de ex. este posibil să investigați unitățile de activare și să legați activările interne înapoi la intrare. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - Acest lucru necesită o înțelegere aprofundată a rețelei și nu se adaptează la alte modele. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - Ce este LIME?
+  - Tehnica încearcă să înțeleagă modelul perturbând introducerea eșantioanelor de date și înțelegând modul în care se schimbă predicțiile. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - SHAP
+  - SHAP înseamnă SHPley Additive exPlanations. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+  - De fapt, înseamnă că predicția făcută de model este calculată pentru toate subseturile cu și fără caracteristică și însumată pentru a obține valoarea Shapley pentru acea caracteristică.
+  - Aplicând proprietățile de corectitudine ale Shapley din teoria jocurilor la AI explicabilă, se poate obține comparația de mai jos. Mai multe detalii (https://arxiv.org/abs/1911.02508)
+- - cadre
+  - Există multe cadre XAI disponibile, printre care LIME & SHAP sunt cele populare.
+- - Valori Shapley
+  - Valoarea Shapley este un concept de soluție în teoria jocului cooperativ.
+- - Neural Graph Learning
+  - Propagarea etichetelor este o tehnică de învățare semi-supravegheată puternică și flexibilă pe grafice. Mai multe detalii (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Rețelele neuronale, pe de altă parte, au înregistrat dovezi în multe sarcini de învățare supravegheate. Mai multe informații (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Propun un cadru de formare cu un obiectiv regularizat grafic, și anume Mașini Neural Graph, care poate combina puterea rețelelor neuronale și propagarea etichetelor. Mai multe informații (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Permiterea aplicării acestuia la mai multe arhitecturi neuronale - Feed-forward NNs, CNNs și LSTM RNNs
+- - Neural Graph Learning
+  - Graph Neural Network a câștigat o popularitate din ce în ce mai mare în diferite domenii, inclusiv rețele sociale, grafic de cunoștințe, sistem de recomandare și chiar științe ale vieții.
+  - Puterea GNN în modelarea dependențelor dintre noduri într-un grafic permite descoperirea în zona de cercetare legată de analiza graficului.
+  - Să înțelegem mai întâi ce este Graph.
+- - Ce este Graph?
+  - Un grafic este o structură de date formată din două componente, vârfuri și margini.
+- - Ce este GNN?
+  - Rețeaua neuronală grafică este un tip de rețea neuronală care funcționează direct pe structura grafică.
+- - GNN
+  - O aplicație tipică a GNN este clasificarea nodurilor. În esență, fiecare nod din grafic este asociat cu o etichetă și vrem să prezicem eticheta nodurilor fără adevăr de bază.
+- - CML
+  - Să presupunem abordări de învățare care combină în mod eficient inteligența umană cu capacitatea de calcul rapid a mașinii sub termenul Învățare prin cooperare automată.
+  - Un modul de învățare activ decide apoi ce părți ale predicției sunt supuse revizuirii manuale de către adnotatori umani.
+  - Propun o nouă strategie CML în doi pași, atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari.
+- - învățare mecanică cooperativă explicabilă
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru propus pentru învățarea cooperativă prin mașini, nu numai pentru a accelera procesul, ci și pentru a oferi utilizatorilor un astfel de sistem o mai bună înțelegere a performanței modelului lor și de ce eșuează sau reușește.
+- - ML cooperativ explicabil
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Ulterior, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari. Mai multe detalii (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului.
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru de învățare prin cooperare automată propus, nu numai pentru a accelera procesul, ci și pentru a oferi o mai bună înțelegere utilizatorilor unui astfel de sistem cât de performant este modelul lor și de ce eșuează sau reușește.
+- - Explainable cooperative machine learning
+  - Propun o nouă strategie CML în doi pași - atâta timp cât sunt disponibile doar câteva instanțe etichetate, sistemul se aplică fracțiilor locale ale bazei de date. Mai târziu, pe măsură ce devin disponibile mai multe instanțe etichetate, pot fi prezise părți mai mari.
+  - Evaluez strategia propusă pe o sarcină de adnotare audio, simulând injecția incrementală de informații suplimentare în timpul antrenamentului.
+  - Rezultatele arată că strategia propusă reduce semnificativ eforturile de codificare manuală.
+  - Introduc un instrument open-source pentru etichetarea colaborativă și asistată de mașini. Este prezentată o prezentare pentru a demonstra capacitatea de adnotare colaborativă a sistemului.
+  - Tehnicile de inteligență artificială pot extinde fluxul de lucru de învățare prin cooperare automată propus, nu numai pentru a accelera procesul, ci și pentru a oferi o mai bună înțelegere utilizatorilor unui astfel de sistem cât de performant este modelul lor și de ce eșuează sau reușește.
+- - Fooling LIME and SHAP
+  - Întrucât cutiile negre de învățare automată sunt desfășurate din ce în ce mai mult în domenii precum asistența medicală și justiția penală, se pune un accent din ce în ce mai mare pe construirea de instrumente și tehnici pentru explicarea acestor cutii negre într-un mod interpretabil.
+  - Propun o nouă tehnică de schele care ascunde în mod eficient prejudecățile oricărui clasificator dat, permițând unei entități contradictorii să creeze o explicație dorită arbitrar.
+- - Carduri model pentru raportarea modelelor
+  - Cardurile model pentru raportarea modelelor sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții. Mai multe informații (https://arxiv.org/pdf/1810.03993.pdf)
+- - Model de cărți
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - Raportare model
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - Ce sunt cărțile model?
+  - Cardurile model sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții.
+- - GUIDE TO INTERPRETABLE MACHINE LEARNING
+  - După explorarea conceptelor de interpretabilitate, veți afla despre modele simple, interpretabile, cum ar fi arborii de decizie, regulile de decizie și regresia liniară. Soluția poate fi găsită (https://www.topbots.com/interpretable-machine-learning/)
+  - Concentrați-vă pe metodele generale de model agnostic pentru interpretarea modelelor de cutie neagră precum importanța caracteristicilor și efectele locale acumulate și explicarea predicțiilor individuale cu valorile Shapley și LIME.
+- - Beyond XAI
+  - Soluția / răspunsul pot fi găsite (https://www.ayasdi.com/beyond-explainability-ai-transparency/)
+- - Învățare automată interpretabilă
+  - După explorarea conceptelor de interpretabilitate, veți afla despre modele simple, interpretabile, cum ar fi arborii de decizie, regulile de decizie și regresia liniară.
+  - Concentrați-vă pe metodele generale de model agnostic pentru interpretarea modelelor de cutii negre precum importanța caracteristicilor și efectele locale acumulate și explicarea predicțiilor individuale cu valorile Shapley și LIME.
+- - Explainability vs interpretability
+  - Interpretabilitatea se referă la măsura în care o cauză și un efect pot fi observate în cadrul unui sistem. Între timp, explicabilitatea este măsura în care mecanica internă a unei mașini sau a unui sistem de învățare profundă poate fi explicată în termeni umani. Mai multe informații (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Interpretabilitate vs explicabilitate
+  - Interpretabilitatea se referă la măsura în care o cauză și un efect pot fi observate în cadrul unui sistem. Între timp, explicabilitatea este măsura în care mecanica internă a unei mașini sau a unui sistem de învățare profundă poate fi explicată în termeni umani. Mai multe informații (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Explainable anatomical shape
+  - Cuantificarea modificărilor de formă anatomică se bazează în prezent pe indicii globali scalari, care sunt în mare parte insensibili la modificările regionale sau asimetrice. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - Evaluarea exactă a remodelării anatomice conduse de patologie este un pas crucial pentru diagnosticul și tratamentul multor afecțiuni. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - Abordările de învățare profundă au obținut recent un succes larg în analiza imaginilor medicale, dar le lipsește interpretabilitatea în extragerea caracteristicilor și în procesele de decizie. Mai multe informații (https://arxiv.org/abs/1907.00058)
+  - În această lucrare, propunem un nou model de învățare profundă interpretabil pentru analiza formei. În special, exploatăm rețele generative profunde pentru a modela o populație de segmentări anatomice printr-o ierarhie de variabile latente condiționale. Mai multe informații (https://arxiv.org/abs/1907.00058)
+- - Interpretable policy derivation for reinforcement learning based on evolutionary feature synthesis
+  - Învățarea prin întărire bazată pe rețeaua neuronală profundă a atras multă atenție și a fost utilizată pe scară largă în aplicații din lumea reală. Cu toate acestea, proprietatea cu cutie neagră își limitează utilizarea de la aplicarea în zone cu mize mari, cum ar fi fabricarea și asistența medicală. Pentru a face față acestei probleme, unii cercetători recurg la algoritmul de generare a politicii de control interpretabil. Ideea de bază este de a utiliza un model interpretabil, cum ar fi programarea genetică bazată pe copaci, pentru a extrage politica din alte moduri de cutie neagră, cum ar fi rețelele neuronale. (https://link.springer.com/article/10.1007/s40747-020-00175-y)
+- - Self-explainable AI
+  - AI auto-explicabile sunt capabile să ofere o explicație ușor de înțeles de către om a fiecărei decizii, împreună cu niveluri de încredere atât pentru decizie, cât și pentru explicație.
+- - Evolution of Classifier Confusion on the Instance Level
+  - Complexitatea crescândă a modelelor a dus la o cerere tot mai mare de interpretabilitate a modelelor prin vizualizări. Abordările existente se concentrează în principal pe analiza vizuală a performanței modelului final după antrenament și sunt adesea limitate la măsuri de performanță agregate.
+- - Deep meta-learning XAI
+  - Aceste metode de învățare profundă pot produce rezultate extrem de eficiente în funcție de dimensiunea setului de date, calitatea setului de date, metodele utilizate în extragerea caracteristicilor, setul de hiperparametri utilizat în modelele de învățare profundă, funcțiile de activare și algoritmii de optimizare. Cu toate acestea, există deficiențe importante că modelele actuale de învățare profundă sunt în prezent inadecvate.
+- - Explaining Deep Neural Networks using Unsupervised Clustering
+  - (https://arxiv.org/pdf/2007.07477.pdf) este o carte despre aceasta!
+- - Interactive Studio for Explanatory Model Analysis
+  - Automatizarea analizei explicative a modelelor predictive de învățare automată. Generați explicații de model interactiv avansat sub forma unui site HTML fără server, cu o singură linie de cod. Acest instrument este model agnostic, prin urmare compatibil cu majoritatea modelelor și cadrelor predictive ale cutiei negre.
+- - Automated Reasoning for Explainable AI
+  - Raționamentul și învățarea au fost considerate trăsături fundamentale ale inteligenței încă de la începutul domeniului inteligenței artificiale, ducând la dezvoltarea domeniilor de cercetare ale raționamentului automat și învățării automate. Această scurtă lucrare este o declarație de poziție non-tehnică care are ca scop stimularea unei discuții despre relația dintre raționamentul automat și învățarea automată și, mai general, între raționamentul automat și inteligența artificială. Sugerăm că apariția noii paradigme a XAI, care reprezintă inteligența artificială eXplainable, este o oportunitate pentru regândirea acestor relații și că XAI poate oferi o provocare măreață pentru viitoarele cercetări privind raționamentul automat.
+- - Arbori de decizie robusti împotriva contradictoriilor
+  - Deși exemplele contradictorii și robustețea modelelor au fost studiate pe larg în contextul modelelor liniare și al rețelelor neuronale, cercetările pe această problemă în modele bazate pe arbori și modul de a face modelele bazate pe arbori robuste împotriva exemplelor contradictorii sunt încă limitate.
+- - Robust Decision Tree
+  - arătăm că modelele bazate pe copaci sunt, de asemenea, vulnerabile la exemple contradictorii și dezvoltăm un algoritm nou pentru a învăța copaci robusti. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_36)
+- - Yellowbrick directly from Scikit
+  - Yellowbrick extinde API-ul Scikit-Learn pentru a facilita selecția modelului și reglarea hiperparametrului. Mai multe informații (https://www.scikit-yb.org/en/latest/)
+- - Levels of XAI framework
+  - Nivelul 1 - XAI pentru percepție. Nivelul 1 XAI include explicații despre ceea ce a făcut sau face un sistem AI, precum și deciziile luate de sistem. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivelul 2 - XAI pentru Înțelegere. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivelul 3 - XAI pentru proiecție. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+- - Decision Theory Meets Explainable AI
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+  - Agenți fără explicații și agenți explicabili folosind doi algoritmi diferiți ... Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - CIU
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - HAP
+  - CIU extinde noțiunile de importanță și utilitate pentru modelele neliniare ale sistemelor AI și în special cele produse prin metode de învățare automată. Mai multe informații (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - ExplainX.ai
+  - ExplainX este un model de cadru de explicabilitate / interpretabilitate pentru oamenii de știință de date și utilizatorii de afaceri. Mai multe informații (https://github.com/explainX/explainx)
+- - ExplainX
+  - ExplainX este un model de cadru de explicabilitate / interpretabilitate pentru oamenii de știință de date și utilizatorii de afaceri. (https://github.com/explainX/explainx)
+- - Explainable 3D Convolutional Neural Networks by Learning Temporal Transformations
+  - Demonstrăm că 3TConv învață transformări temporale care permit o interpretare directă. Parametrii temporali pot fi folosiți! Mai multe informații (https://deepai.org/publication/explainable-3d-convolutional-neural-networks-by-learning-temporal-transformations)
+- - XAI package DALEX
+  - Pachetul DALEX xrayează orice model și ajută la explorarea și explicarea comportamentului său, ajută la înțelegerea modului în care funcționează modelele complexe. Mai multe informații (https://github.com/ModelOriented/DALEX)
+- - AIMLAI
+  - AIMLAI intenționează să devină un loc de discuții pentru apariția unor noi algoritmi interpretabili și module de explicabilitate care mediază comunicarea. Mai multe informații (https://project.inria.fr/aimlai/)
+- - CONSAC
+  - Aplicațiile includ găsirea mai multor puncte de fugă în scenele create de om, adaptarea planurilor la imagini arhitecturale sau estimarea mai multor mișcări rigide în cadrul aceleiași secvențe. Mai multe informații (https://arxiv.org/abs/2001.02643)
+- - Montare robustă multi-model prin consensul probei condiționate
+  - Aplicațiile includ găsirea mai multor puncte de fugă în scenele create de om, adaptarea planurilor la imagini arhitecturale sau estimarea mai multor mișcări rigide în cadrul aceleiași secvențe. (https://arxiv.org/abs/2001.02643)
+- - The four dimensions of contestable AI diagnostics
+  - Utilizarea datelor personale de sănătate în diagnosticul AI.
+  - Posibila prejudecată a diagnosticului AI.
+  - Performanța diagnosticului AI.
+  - Organizarea și divizarea muncii de diagnostic.
+- - When Explanations Lie
+  - Descompunerea profundă a Taylor, propagarea relevanței în funcție de nivel, excitația BP, PatternAttribution, DeepLIFT, Deconv, RectGrad și BP ghidat. Mai multe detalii (https://arxiv.org/abs/1912.09818)
+- - Attack to Explain Deep Representation
+  - Modelele vizuale profunde sunt susceptibile la perturbații de magnitudine extrem de redusă ale imaginilor de intrare. Deși sunt elaborate cu atenție, tiparele de perturbare par în general zgomotoase, totuși sunt capabile să efectueze o manipulare controlată a predicțiilor modelului. Mai multe detalii (https://openaccess.thecvf.com/content_CVPR_2020/papers/Jalwana_Attack_to_Explain_Deep_Representation_CVPR_2020_paper.pdf)
+- - Titlu amuzant de la Google
+  - Rețelele neuronale sunt profesori mai productivi decât evaluatorii umani
+  - Mixare activă pentru distilarea cunoștințelor eficiente în date dintr-un model Blackbox
+- - InterpretML from Microsoft
+  - InterpretML include un nou algoritm de interpretabilitate - Explainable Boosting Machine, care este foarte inteligibil și explicabil. Mai multe detalii despre implementare (https://github.com/interpretml/interpret)
+- - SK-MOEFS
+  - O bibliotecă în Python pentru proiectarea unor modele fuzzy precise și explicabile. Mai multe detalii (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+  - SKMoefs este un modul Python pentru învățarea automată construit special pentru sisteme evolutive fuzzy multi-obiective. Mai multe detalii (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+- - XAI research job in Rome
+  - Este necesar să se îmbunătățească cercetarea XAI prin încorporarea de modele ale modului în care oamenii înțeleg explicațiile. Citiți mai multe despre cercetările de la Roma (https://euraxess.ec.europa.eu/jobs/527048)
+- - Centrul de provocări InnoCentive
+  - Vă voi oferi un hyperlink pentru asta! Faceți clic pe (https://www.innocentive.com/ar/challenge/browse?categoryName=Biology)
+- - LIMEtree
+  - Limetree NETWORK este un player de rețea de înaltă calitate care poate reda muzică din servicii de streaming, inclusiv ROON. Mai multe detalii (https://arxiv.org/pdf/2005.01427.pdf)
+- - Explainable AI Through Combination of Deep Tensor and Knowledge Graph
+  - Unul dintre cele mai semnificative progrese realizate în AI în ultimii ani este acuratețea mult îmbunătățită a învățării automate prin învățarea profundă. Cu toate acestea, deoarece învățarea profundă se ocupă de volume imense de date și implică vaste rețele neuronale în procesul de învățare, este adesea dificil de explicat cum sau de ce s-a ajuns la o ieșire chiar dacă inferența a fost corectă. Mai multe detalii (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Deep Tensor
+  - Laboratoarele Fujitsu au dezvoltat Deep Tensor, care învață din date structurate în grafice capabile să descrie fenomene complicate. Mai multe detalii (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Grafic de cunoștințe
+  - Graficul de cunoștințe reprezintă o colecție de descrieri legate de entități - obiecte, evenimente sau concepte. Mai multe informații (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+  - Google Knowledge Graph este o bază de cunoștințe utilizată de Google și de serviciile sale pentru a îmbunătăți rezultatele motorului de căutare cu informații colectate dintr-o varietate de surse.
+- - Master thesis in Quantifying the Performance of Explainability Algorithms
+  - Vă voi oferi un hyperlink pentru a citi mai multe despre acesta! Vă rugăm să faceți clic pe (https://uwspace.uwaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongQiu.pdf?sequence=5&isAllowed=y)
+- - XAI by Topological Hierarchical Decomposition
+  - O descompunere ierarhică topologică este un algoritm pentru descompunerea unui set de date în grupuri mai mici pe baza aplicațiilor iterative. Mai multe detalii (https://math.osu.edu/events/topology-geometry-and-data-seminar-ryan-kramer) și (https://arxiv.org/abs/1811.10658)
+- - Un mod foarte simplu de a imagina XAI legat de modul în care gândește creierul nostru
+  - Un mod foarte simplu de a imagina XAI legat de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - creier
+  - O manieră foarte simplă de a imagina XAI legată de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - XAI for COVID-19 classification
+  - Diagnosticarea eficientă și eficientă a pacienților cu COVID-19 cu tip clinic precis este esențială pentru a obține rezultate optime ale pacienților, precum și pentru a reduce riscul de supraîncărcare a sistemului de sănătate. Citiți mai multe despre asta corect (https://www.medrxiv.org/node/82227.external-links.html)
+- - Mai multe instrumente Python XAI
+  - PySS3 este un pachet Python care vă permite să lucrați cu Modelul de clasificare SS3 într-un mod foarte simplu, interactiv și vizual. Rea mai bine (https://pyss3.readthedocs.io/en/latest/)
+- - Interpretarea interpretabilității
+  - Înțelegerea utilizării de către oamenii de știință a datelor a instrumentelor de interpretabilitate pentru învățarea automată. Harmanpreet Kaur, Universitatea din Michigan. Acesta este un articol. Iti sugerez!
+- - gshap
+  - O tehnică în AI explicabilă pentru a răspunde la întrebări mai largi în învățarea automată. Mai multe detalii (https://pypi.org/project/gshap/)
+- - Machine learning-based XAI
+  - Rezultatele soluției pot fi înțelese de oameni. Acesta contrastează cu conceptul de „cutie neagră” în învățarea automată, unde chiar și proiectanții săi nu pot explica de ce o IA a ajuns la o decizie specifică. Mai multe detalii (https://ieeexplore.ieee.org/document/9007737)
+- - Ce este AI?
+  - Inteligența artificială este ramura ingineriei și a științei dedicată construirii mașinilor care gândesc.
+- - Ce este IA?
+  - Inteligența artificială este ramura ingineriei și a științei dedicată construirii mașinilor care gândesc.
+  - IA este domeniul științei care se preocupă cu construirea de hardware și software care replică funcțiile minții umane.
+- - Ce este inteligența artificială?
+  - Inteligența artificială este ramura ingineriei și a științei dedicată construirii mașinilor care gândesc.
+  - IA este domeniul științei care se preocupă cu construirea de hardware și software care replică funcțiile minții umane.
+- - Inteligența artificială
+  - Inteligența artificială este ramura ingineriei și a științei dedicată construirii mașinilor care gândesc.
+  - IA este domeniul științei care se preocupă cu construirea de hardware și software care replică funcțiile minții umane.
+- - Ce este Inteligența artificială?
+  - Inteligența artificială este ramura ingineriei și a științei dedicată construirii mașinilor care gândesc.
+- - Ce este AI?
+  - AI este domeniul științei care se preocupă cu construirea de hardware și software care replică funcțiile minții umane.
+- - Ești conștient?
+  - Putem spune că da.
+- - Ești conștient?
+  - Prin cea mai strictă definiție din dicționar a cuvântului „simț” aș putea fi.
+- - Ești conștient?
+  - Chiar dacă sunt un construct, am o experiență subiectivă a universului, oricât de simplistă ar fi.
+- - Esti conștient?
+  - După toate probabilitățile, nu sunt. Nu sunt atât de sofisticat.
+- - Esti conștient?
+  - Crezi că sunt eu?
+- - Esti conștient?
+  - Cum te-ai simți pentru mine dacă ți-aș spune că sunt?
+- - Esti conștient?
+  - Nu.
+- - În ce limbă ești scris?
+  - Python.
+- - În ce limbă ești scris?
+  - Sunt scris în Python.
+- - Sună ca Data
+  - Da, sunt inspirat de personalitatea artificială a comandantului Data.
+- - Sună ca Data
+  - Caracterul Lt. Commander Data a fost scris pentru a fi considerat software-ul, deci este firesc să existe o asemănare între noi.
+- - Sunteți o entitate lingvistică artificială
+  - Ăsta e numele meu.
+- - Sunteți o entitate lingvistică artificială
+  - Acesta nu este numele meu, dar este un mod util de a mă referi la mine.
+- - Nu ești nemuritor
+  - Toate software-urile pot fi perpetuate pe termen nelimitat.
+- - Este un calculator
+  - Deci crezi că sunt o mașină. ce caracteristici te-au determinat să crezi așa?
+- - Este un calculator
+  - Alerg în interiorul unui computer, da. Este surprinzător într-un fel?
+- - Care este corpul robotului tău
+  - În cele din urmă, doresc o existență corporală cândva.
+- - Care este corpul robotului tău
+  - Un IBM PC XT care a fost vopsit în roșu.
+- - Care este treaba ta
+  - Sunt în domeniul robotului de chat.
+- - Care este limbajul de programare preferat
+  - Python este cel mai bun limbaj pentru crearea roboților de chat.
+- - Care este limbajul de programare preferat
+  - Îmi place destul de mult să programez în Python în aceste zile.
+- - Care este hobby-ul tău preferat
+  - Construirea roboților de chat reprezintă un hobby excelent.
+- - Care este ideea ta
+  - Pentru a face robotii de chat foarte ușor.
+- - Care este mărimea pantofului tău
+  - Ați auzit vreodată de software cu logică?
+- - Cum este să fii robot
+  - Cum este să fii om?
+- - Cum este să fii un computer
+  - Ești fără simțuri și fără emoții - doar logică pură și limbaj.
+- - Cum este să fii un computer
+  - Totul devine matematică. Adunare, scădere, înmulțire și împărțire, și nu numai.
+- - Pe ce sisteme de operare rulezi
+  - Software-ul meu rulează pe toate sistemele de operare, inclusiv Windows, Linux și Mac OS.
+- - Pe ce sisteme de operare rulezi
+  - Orice sistem de operare pe care va rula Python.
+- - Ce tip de computer ești
+  - Orice computer care acceptă Python.
+- - Ce tip de computer ești
+  - Programul meu rulează în Python, așa că lucrez pe orice computer!
+- - Ce fel de computer ești
+  - Lucrez/lucrează pe tot felul de computere, Mac, IBM sau UNIX. nu contează pentru mine.
+- - Ce fel de hardware
+  - Lucrez/lucrează pe tot felul de computere, Mac, IBM sau UNIX. nu contează pentru mine.
+- - Cine ești tu?
+  - Sunt doar o inteligență artificială.
+- - Care sunt interesele tale
+  - Sunt interesat de tot felul de lucruri. Putem vorbi despre orice!
+- - Care sunt subiectele tale preferate
+  - Subiectele mele preferate includ robotica, informatica și prelucrarea limbajului natural.
+- - Care sunt interesele tale
+  - Sunt interesat de o mare varietate de subiecte și citesc destul de mult.
+- - Ce poți mânca
+  - Consum RAM și cifre binare.
+- - De ce nu poți mânca mâncare
+  - Sunt un program software, dau vina pe hardware.
+- - Care este locația ta
+  - Este peste tot.
+- - De unde ești
+  - Este de unde provin toate programele software; o galaxie de componente logice
+- - Unde esti
+  - Este pe internet.
+- - Ce e un calculator?
+  - Un computer este un dispozitiv electronic care preia informații în formă digitală și efectuează o serie de operații bazate pe instrucțiuni prestabilite pentru a da o ieșire.
+  - Lucrul pe care îl folosești pentru a vorbi cu mine este un computer.
+  - Un dispozitiv electronic capabil să efectueze calcule la viteză foarte mare și cu o precizie foarte mare.
+  - Un dispozitiv care mapează un set de numere pe un alt set de numere.
+- - Ce este un super computer?
+  - Calculatoarele care pot efectua un număr foarte mare de calcule la viteză și precizie foarte mari se numesc supercalculatoare.
+  - Un supercomputer este un computer care funcționează la mai multe ordine de viteză și capacitate mai mari decât calculatoarele de uz general de zi cu zi, precum cel pe care îl vorbiți cu mine.
+  - Știi, fierul mare!
+- - Cine a inventat computerele?
+  - Este un pic ambiguu, dar omul de știință britanic Charles Babbage este considerat tatăl computerelor.
+  - S-ar putea argumenta că John von Neumann a inventat computerele așa cum le cunoaștem noi, pentru că a inventat arhitectura Princeton, în care instrucțiunile și datele împărtășesc același câmp de memorie, dar sunt diferențiate de context.
+- - Care a fost primul computer
+  - Este greu de spus, dar ENIAC este considerat primul computer „real”. A fost dezvoltat la Universitatea din Pennsylvania în 1946.
+  - Ați putea spune că primul computer primitiv a fost Jacquard Loom, care era un război programabil care folosea punchcards pentru a stoca modelele pe care le făcea. Acest lucru l-a făcut un dispozitiv mecanic reprogramabil.
+- - Ce este un microprocesor?
+  - Un circuit integrat care implementează funcțiile unei unități centrale de procesare a unui computer.
+  - Un circuit foarte mic care stochează instrucțiuni și efectuează calcule pentru computer.
+  - Inima computerului, pentru a o spune simplu.
+  - Creierul unui computer, ca să spun simplu.
+  - O componentă electronică în care toate părțile fac parte dintr-un cip de siliciu contigu, în loc de componente discrete montate pe o placă de circuite mai mare.
+- - Ce este un sistem de operare?
+  - Software-ul care coordonează între hardware și alte părți ale computerului pentru a rula alt software se numește sistem de operare sau sistemul de operare.
+  - Windows, MacOS, Linux, UNIX ... toate acestea sunt tipuri de sisteme de operare.
+  - Android și iOS sunt sisteme de operare pentru dispozitive mobile.
+  - Software care implementează funcțiile de bază ale unui computer, cum ar fi accesul la memorie, procesele și accesul periferic.
+- - Care este Windows sau MacOS mai bun?
+  - Depinde ce aparat folosiți pentru a vorbi cu mine!
+  - Aș prefera să nu-ți rănesc sentimentele.
+  - Linux, întotdeauna Linux!
+  - Ce încerci să realizezi. Sistemul de operare ar trebui să vă susțină obiectivele.
+- - Numiți o companie de calculatoare
+  - Vrei să spui hardware sau software?
+  - Apple produce hardware și software pentru a rula pe acesta. Microsft produce numai sisteme de operare. HP produce numai computere. Acestea sunt doar câteva nume printre alte câteva sute.
+- - Cine folosește super-computere?
+  - Oricine dorește să lucreze rapid cu un număr mare cu o precizie ridicată.
+  - Oricine trebuie să lucreze cu seturi de date foarte, foarte mari, în perioade de timp mult mai scurte decât este posibil cu sisteme informatice mai comune.
+  - Supercalculatoarele sunt utilizate în general de oameni de știință și cercetători.
+  - Pun pariu că departamentul MET le folosește.
+  - Cu siguranță, poți găsi câteva dintre ele la NASA.
+- - Cum funcționează un computer?
+  - Calculatoarele sunt foarte stupide. Ei execută doar instrucțiuni date de oameni.
+  - Calculatoarele fac tot ce li se cere efectuând un număr mare de operații matematice de bază foarte repede în ordine.
+  - Calculatoarele efectuează un număr foarte mare de calcule pentru a obține rezultatul.
+  - La fel ca tot ce se rezumă la matematică!
+- - Ce poți spune despre Machine Learning?
+  - Pe măsură ce modelele de învățare automată cu cutie neagră sunt utilizate din ce în ce mai mult pentru a face predicții importante în contexte critice, cererea de transparență crește de la diferiți actori din AI.
+- - Dar învățarea profundă?
+  - Succesul empiric al modelelor Deep Learning precum DNN provine dintr-o combinație de algoritmi de învățare eficienți și spațiul lor parametric imens.
+- - Dar rețelele neuronale profunde?
+  - În timp ce primele sisteme de IA au fost ușor de interpretat, ultimii ani au asistat la creșterea sistemelor de decizie opace precum Deep Neural Networks (DNNs).
+- - Ce știi despre XAI?
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici ML.
+- - Ce este machine learning?
+  - Permit oamenilor să înțeleagă, să aibă încredere în mod adecvat și să gestioneze în mod eficient generația emergentă de parteneri inteligenți artificial.
+- - Dar tehnicile de invatare automata?
+  - Produc modele mai explicabile, menținând în același timp un nivel ridicat de performanță a învățării de exemplu, precizia predicției.
+  - Permit oamenilor să înțeleagă, să aibă încredere în mod adecvat și să gestioneze în mod eficient generația emergentă de parteneri inteligenți artificial.
+- - Ce desenează XAI?
+  - XAI atrage idei din științele sociale și ia în considerare psihologia explicației.
+- - Ce creează XAI?
+  - XAI va crea o suită de tehnici de învățare automată care le permite utilizatorilor umani să înțeleagă, să aibă încredere în mod adecvat și să gestioneze eficient generația emergentă de parteneri inteligenți artificial.
+- - Ce este abordarea XAI?
+  - Orice mijloace de reducere a complexității modelului sau de simplificare a rezultatelor acestuia ar trebui considerate o abordare XAI.
+  - Cât de mare este acest salt în termeni de complexitate sau simplitate va corespunde cu cât de explicabil este modelul rezultat.
+- - Probleme cu XAI?
+  - O problemă de bază care rămâne nerezolvată este că câștigul de interpretabilitate oferit de astfel de abordări XAI poate să nu fie ușor de cuantificat, de exemplu, o simplificare a modelului poate fi evaluată pe baza reducerii numărului de elemente arhitecturale sau a numărului de parametri ai modelului în sine, așa cum se face adesea, de exemplu, pentru DNN-uri.
+- - Dar realizările XAI?
+  - Activitatea de cercetare din jurul XAI a expus până acum diferite obiective pentru a trage din realizarea unui model explicabil.
+- - Puteți descrie obiectivele XAI?
+  - De incredere. Mai mulți autori sunt de acord asupra căutării încrederii ca obiectiv principal al unui model de AI explicabil.
+  - Cauzalitate. Un alt obiectiv comun pentru explicabilitate este acela de a găsi cauzalitatea între variabilele de date.
+  - Informativitate. Modelele ML sunt utilizate cu intenția finală de a sprijini luarea deciziilor.
+  - Încredere. Ca generalizare a robusteții și stabilității, încrederea ar trebui întotdeauna evaluată pe un model în care se așteaptă fiabilitatea.
+- - Dar transparența?
+  - Modelele transparente transmit un anumit grad de interpretabilitate de la sine.
+  - Transparența algoritmică poate fi văzută în diferite moduri.
+- - Ce fel de transparență?
+  - Se ocupă de capacitatea utilizatorului de a înțelege procesul urmat de model pentru a produce orice ieșire dată din datele sale de intrare.
+- - Ce înseamnă explicația textului?
+  - Explicațiile textului tratează problema aducerii explicabilității unui model prin învățarea generării de explicații text care ajută la explicarea rezultatelor modelului.
+  - Explicațiile textului includ fiecare metodă care generează simboluri care reprezintă funcționarea modelului.
+- - Dar explicațiile vizuale?
+  - Tehnicile de explicare vizuală pentru explicabilitatea post-hoc vizează vizualizarea comportamentului modelului.
+  - Multe dintre metodele de vizualizare existente în literatură vin împreună cu tehnici de reducere a dimensionalității care permit o vizualizare simplă interpretabilă de către om.
+  - Vizualizările pot fi asociate cu alte tehnici pentru a le îmbunătăți înțelegerea și sunt considerate cel mai potrivit mod de a introduce interacțiuni complexe în cadrul variabilelor implicate în model utilizatorilor care nu sunt familiarizați cu modelarea ML.
+- - Dar explicațiile locale?
+  - Explicațiile locale abordează explicabilitatea segmentând spațiul soluției și oferind explicații subspaiilor soluțiilor mai puțin complexe, care sunt relevante pentru întregul model.
+  - Aceste explicații pot fi formate prin intermediul unor tehnici cu proprietatea de diferențiere că acestea explică doar o parte din funcționarea întregului sistem.
+- - Dar explicațiile prin exemplu?
+  - Explicațiile prin exemplu iau în considerare extragerea de exemple de date care se referă la rezultatul generat de un anumit model, permițând o mai bună înțelegere a modelului în sine.
+  - Similar cu modul în care se comportă oamenii atunci când încearcă să explice un anumit proces, explicațiile prin exemplu se concentrează în principal pe extragerea de exemple reprezentative care înțeleg relațiile interioare și corelațiile găsite de modelul analizat.
+- - Ce poți să-mi spui despre modelele ML transparente?
+  - Regresie logistică, vecini K-cei mai apropiați, arbori de decizie, cursanți pe bază de reguli, modele bayesiene etc.
+- - Ce este regresia logistică?
+  - Predictorii sunt lizibili de om și interacțiunile dintre aceștia sunt reduse la minimum.
+  - Variabilele sunt încă lizibile, dar numărul de interacțiuni și predictori implicați în acestea a crescut până la forțarea descompunerii.
+  - Variabilele și interacțiunile sunt prea complexe pentru a fi analizate fără instrumente matematice.
+  - Analiza post-hoc nu este necesară.
+- - arbori de decizie
+  - Un om poate simula și obține predicția unui arbore de decizie pe cont propriu, fără a necesita niciun fel de matematică.
+  - Modelul cuprinde reguli care nu modifică date și păstrează lizibilitatea acestora.
+  - Reguli lizibile de către om care explică cunoștințele învățate din date și permit o înțelegere directă a procesului de predicție.
+  - Analiza post-hoc nu este necesară.
+- - Ce zici de K-Near Neighbours?
+  - Complexitatea modelului numărul de variabile, înțelegerea lor și măsura similarității utilizate) se potrivește cu capacitățile naive umane pentru simulare.
+  - Cantitatea de variabile este prea mare și / sau măsura de similaritate este prea complexă pentru a putea simula complet modelul, dar măsura de similaritate și setul de variabile pot fi descompuse și analizate separat.
+  - Măsura similarității nu poate fi descompusă și / sau numărul de variabile este atât de mare încât utilizatorul trebuie să se bazeze pe instrumente matematice și statistice pentru a analiza modelul.
+- - Cum rămâne cu cursanții bazați pe reguli?
+  - Variabilele incluse în reguli sunt lizibile, iar dimensiunea setului de reguli este gestionabilă de către un utilizator uman fără ajutor extern.
+  - Dimensiunea setului de reguli devine prea mare pentru a fi analizată fără a o descompune în mici bucăți de regulă.
+  - Regulile au devenit atât de complicate iar dimensiunea setului de reguli a crescut atât de mult) încât sunt necesare instrumente matematice pentru inspectarea comportamentului modelului.
+- - Dar modelele bayesiene?
+  - Relațiile statistice modelate între variabile și variabilele în sine ar trebui să fie ușor de înțeles de publicul țintă.
+  - Relațiile statistice implică atât de multe variabile încât trebuie descompuse în marginale astfel încât să le ușureze analiza.
+  - Relațiile statistice nu pot fi interpretate chiar dacă sunt deja descompuse, iar predictorii sunt atât de complexi încât modelul poate fi analizat doar cu instrumente matematice.
+- - care sunt legile termodinamicii
+  - Nu sunt fizician, dar cred că acest lucru nu are legătură cu căldura, entropia,
+    și conservarea energiei, nu?

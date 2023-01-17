@@ -1,0 +1,580 @@
+categories:
+- AI
+- veštačka inteligencija
+- profil
+- računari
+- Nauka
+- hrana
+- sport
+- psihologija
+- trivijalnosti
+- politika
+- filmovi
+- istorija
+- zdravlje
+- novac
+- tračevi
+- razgovori
+- emocija
+
+conversations:
+- - Model kartice za izveštavanje o modelima
+  - Karte modela za izveštavanje o modelima su kratki dokumenti koji prate obučene modele mašinskog učenja koji pružaju referentnu evaluaciju u različitim uslovima. Više informacija (https://arxiv.org/pdf/1810.03993.pdf)
+- - LIME
+  - LIME je agnostički prema modelu, što znači da se može primeniti na bilo koji model mašinskog učenja. Više detalja (https://arxiv.org/abs/1911.02508)
+  - Pristupi specifični za model imaju za cilj razumevanje crnog modela modela mašinskog učenja analizom unutrašnjih komponenti i njihovog međusobnog delovanja. Više detalja (https://arxiv.org/abs/1911.02508)
+  - U modelima dubokog učenja to je npr. moguće istražiti jedinice za aktiviranje i povezati unutrašnje aktivacije natrag na ulaz. Više detalja (https://arxiv.org/abs/1911.02508)
+  - Ovo zahteva temeljno razumevanje mreže i ne prilagođava se drugim modelima. Više detalja (https://arxiv.org/abs/1911.02508)
+- - Šta je LIME?
+  - Tehnika pokušava da razume model ometanjem unosa uzoraka podataka i razumevanjem kako se predviđanja menjaju. Više detalja (https://arxiv.org/abs/1911.02508)
+- - SHAP
+  - SHAP je skraćenica od SHaplei Additive ekPlanations. Više detalja (https://arxiv.org/abs/1911.02508)
+  - U stvari to znači da se predviđanje koje je napravio model izračunava za sve podskupove sa i bez obeležja i sumira da bi se dobila Shapleijeva vrednost za to svojstvo.
+  - Primenom Shapleijevih svojstava pravičnosti iz teorije igara na objašnjivu AI, može se izvesti poređenje u nastavku. Više detalja (https://arxiv.org/abs/1911.02508)
+- - okviri
+  - Postoji mnogo XAI okvira među kojima su LIME & SHAP popularni.
+  - Shaplei vrednosti
+  - Shaplei-jeva vrednost je koncept rešenja u teoriji kooperativne igre.
+- - Neurografsko učenje
+  - Proširivanje etiketa je moćna i fleksibilna polunadgledana tehnika učenja na grafikonima. Više detalja (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - S druge strane, neuronske mreže imaju dokazane rezultate u mnogim nadgledanim zadacima učenja. Više informacija (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Predlažem okvir za obuku sa grafski regulisanim ciljem, naime Neural Graph Machines, koji može kombinovati snagu neuronskih mreža i širenje etiketa. Više informacija (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Omogućavanje da se primeni na više neuronskih arhitektura NN-ovi sa povratnim protokom, CNN-ovi i LSTM RNN-ovi
+- - Šta je grafička neuronska mreža?
+  - Grafička neuronska mreža stekla je sve veću popularnost u raznim domenima, uključujući društvenu mrežu, grafikon znanja, sistem preporuka, pa čak i nauku o životu.
+  - Snaga GNN-a u modeliranju zavisnosti između čvorova u grafikonu omogućava proboj u istraživačkom području vezanom za analizu grafova.
+  - Prvo da shvatimo šta je Grafikon.
+- - Šta je Graf?
+  - Grafikon je struktura podataka koja se sastoji od dve komponente, temena i ivica.
+- - Šta je GNN?
+  - Grafička neuronska mreža je vrsta neuronske mreže koja direktno deluje na strukturi grafa.
+- - GNN
+  - Tipična primena GNN-a je klasifikacija čvorova. U suštini, svaki čvor na grafikonu povezan je sa oznakom, a mi želimo da predvidimo oznaku čvorova bez istine o zemlji.
+- - CML
+  - Podsetimo pristupe učenju koji efikasno kombinuju ljudsku inteligenciju sa mašinskom sposobnošću brzog računanja pod pojmom Kooperativno mašinsko učenje.
+  - Aktivni modul za učenje zatim odlučuje koji delovi predviđanja podležu ručnoj reviziji od strane ljudskih beležača.
+  - Predlažem novu CML strategiju u dva koraka, sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi.
+- - objašnjivo kooperativno mašinsko učenje
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje. Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - objašnjiva zadruga ML
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga.
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje. Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - šta je objašnjivo kooperativno mašinsko učenje?
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi.
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga.
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje. Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - Zavaravanje VAPA i OBLIKA
+  - Kako se crne kutije mašinskog učenja sve više primenjuju u domenima kao što su zdravstvo i krivično pravosuđe, sve je veći naglasak na izgradnji alata i tehnika za objašnjenje ovih crnih kutija na razumljiv način
+  - Predlažem novu tehniku skele koja efikasno sakriva pristrasnosti bilo kog datog klasifikatora, omogućavajući kontradiktornom entitetu da izradi proizvoljno željeno objašnjenje.
+- - Model kartice za izveštavanje o modelima
+  - Model kartice za izveštavanje o modelima su kratki dokumenti koji prate obučene modele mašinskog učenja koji pružaju referentnu evaluaciju u različitim uslovima. Više informacija (https://arxiv.org/pdf/1810.03993.pdf)
+- - VODIČ ZA TUMAČIVO UČENjE MAŠINA
+  - Nakon istraživanja koncepata interpretabilnosti, naučićete o jednostavnim, razumljivim modelima kao što su stabla odlučivanja, pravila odlučivanja i linearna regresija. Rešenje se može naći (https://www.topbots.com/interpretable-machine-learning/)
+  - Fokusirajte se na opšte-agnostičke metode za tumačenje modela crnih kutija poput značaja karakteristika i akumuliranih lokalnih efekata i objašnjavanja pojedinačnih predviđanja pomoću Shaplei-ovih vrednosti i LIME-a.
+- - Iznad XAI
+  - Rešenje / odgovor se može naći (https://www.ayasdi.com/beyond-explainability-ai-transparency/)
+- - Interpretabilno mašinsko učenje
+  - Nakon istraživanja koncepata interpretabilnosti, naučićete o jednostavnim, razumljivim modelima kao što su stabla odlučivanja, pravila odlučivanja i linearna regresija.
+  - Fokusirajte se na opšte-agnostičke metode za tumačenje modela crnih kutija poput značaja karakteristika i akumuliranih lokalnih efekata i objašnjavanja pojedinačnih predviđanja pomoću Shaplei-ovih vrednosti i LIME-a.
+- - Objašnjivost vs interpretabilnost
+  - Interpretabilnost je u meri u kojoj se uzrok i posledica mogu uočiti u sistemu. Objašnjivost je, u međuvremenu, mera u kojoj se unutrašnja mehanika mašine ili sistema dubokog učenja može objasniti ljudskim terminima. Više informacija (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Interpretabilnost vs Objašnjivost
+  - Interpretabilnost je u meri u kojoj se uzrok i posledica mogu uočiti u sistemu. Objašnjivost je, u međuvremenu, mera u kojoj se unutrašnja mehanika mašine ili sistema dubokog učenja može objasniti ljudskim terminima. Više informacija (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Objašnjiv anatomski oblik
+  - Kvantifikacija anatomskih promena oblika trenutno se oslanja na skalarne globalne indekse koji su uglavnom neosetljivi na regionalne ili asimetrične modifikacije. Više informacija (https://arxiv.org/abs/1907.00058)
+  - Tačna procena anatomskog preoblikovanja vođenog patologijom presudan je korak za dijagnozu i lečenje mnogih stanja. Više informacija (https://arxiv.org/abs/1907.00058)
+  - Pristupi dubokog učenja nedavno su postigli širok uspeh u analizi medicinskih slika, ali im nedostaje interpretabilnost u izdvajanju karakteristika i procesima odlučivanja. Više informacija (https://arxiv.org/abs/1907.00058)
+  - U ovom radu predlažemo novi interpretabilni model dubokog učenja za analizu oblika. Konkretno, mi koristimo duboke generativne mreže za modeliranje populacije anatomskih segmentacija kroz hijerarhiju uslovnih latentnih promenljivih. Više informacija (https://arxiv.org/abs/1907.00058)
+- - Interpretabilno izvođenje politike za učenje ojačanja zasnovano na evolutivnoj sintezi karakteristika
+  - Učenje ojačavanja zasnovano na dubokoj neuronskoj mreži privuklo je veliku pažnju i široko se koristi u stvarnim aplikacijama. Međutim, svojstvo crne kutije ograničava njegovu upotrebu od primene u oblastima sa velikim ulogom, poput proizvodnje i zdravstvene zaštite. Da bi se rešili ovog problema, neki istraživači pribegavaju interpretabilnom algoritmu generisanja politike upravljanja. Osnovna ideja je da se pomoću interpretabilnog modela, poput genetičkog programiranja zasnovanog na drvetu, izvuku politike iz drugih modusa crne kutije, poput neuronskih mreža. (https://link.springer.com/article/10.1007/s40747-020-00175-i)
+- - Samoobjašnjavajući AI
+  - Samoobjašnjavajuće umetničke inteligencije mogu pružiti razumljivo objašnjenje svake odluke, kao i nivo poverenja kako za odluku, tako i za objašnjenje.
+- - Evolucija zabune klasifikatora na nivou instance
+  - Sve veća složenost modela dovela je do sve veće potražnje za interpretabilnošću modela kroz vizuelizacije. Postojeći pristupi se uglavnom fokusiraju na vizuelnu analizu učinka konačnog modela nakon treninga i često su ograničeni na agregatne mere učinka.
+- - Duboko meta-učenje XAI
+  - Ove metode dubokog učenja mogu dati visoko efikasne rezultate u zavisnosti od veličine skupa podataka, kvaliteta skupa podataka, metoda korišćenih u ekstrakciji karakteristika, skupa hiper parametara koji se koriste u modelima dubokog učenja, funkcija aktivacije i algoritama za optimizaciju. Međutim, postoje važni nedostaci da su trenutni modeli dubokog učenja trenutno neadekvatni.
+- - Objašnjavanje dubokih neuronskih mreža korišćenjem nenadgledanog klastera
+  - Knjiga koju bih Vam preložio se nalazi (https://arxiv.org/pdf/2007.07477.pdf)
+- - Interaktivni studio za objašnjavajuću analizu modela
+  - Automatizovati objašnjavajuću analizu prediktivnih modela mašinskog učenja. Generišite napredna objašnjenja interaktivnog modela u obliku HTML stranice bez servera sa samo jednom linijom koda. Ovaj alat je agnostički prema modelima, stoga je kompatibilan sa većinom modela i okvira za predviđanje crne kutije.
+- - Automatizovano obrazloženje za objašnjivu AI
+  - Obrazloženje i učenje smatraju se osnovnim obeležjima inteligencije još od postanka polja veštačke inteligencije, što dovodi do razvoja istraživačkih oblasti automatizovanog rezonovanja i mašinskog učenja. Ovaj kratki rad je netehnička izjava o stavu koja ima za cilj da podstakne raspravu o odnosu između automatizovanog zaključivanja i mašinskog učenja, i uopštenije između automatizovanog zaključivanja i veštačke inteligencije. Predlažemo da je pojava nove paradigme XAI, koja označava neobjašnjivu veštačku inteligenciju, prilika za preispitivanje ovih odnosa i da XAI može ponuditi veliki izazov za buduća istraživanja automatizovanog rezonovanja.
+- - Robustna stabla za odlučivanje protiv kontradiktornosti
+  - Iako su kontradiktorni primeri i robusnost modela opsežno proučavani u kontekstu linearnih modela i neuronskih mreža, istraživanje ovog pitanja u modelima zasnovanim na drvetu i kako učiniti modele zasnovane na drvetu robusnim u odnosu na kontradiktorne primere još uvek je ograničeno.
+- - Robusno stablo odlučivanja
+  - pokazujemo da su modeli zasnovani na drvetu takođe podložni kontradiktornim primerima i razvijamo novi algoritam za učenje robusnih stabala. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_36)
+- - Iellovbrick direktno iz Scikita
+  - Iellovbrick proširuje Scikit-Learn API da bi olakšao izbor modela i podešavanje hiperparametara. Više informacija (https://www.scikit-yb.org/en/latest/)
+- - Nivoi XAI okvira
+  - Nivo 1 - XAI za percepciju. XAI nivoa 1 uključuje objašnjenja o tome šta je AI sistem radio ili radi, kao i odluke koje je sistem doneo. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivo 2 - XAI za razumevanje. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - nivo 3 - XAI za projekciju. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+- - Teorija odluke zadovoljava objašnjivu AI
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+  - Agenti bez objašnjenja i objašnjivi agenti koji koriste dva različita algoritma ... Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - CIU
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - HAP
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - ObjasniKs.ai
+  - EkplainKs je model objasnjivosti / interpretabilnosti modela za naučnike podataka i poslovne korisnike. Više informacija (https://github.com/ekplainKs/ekplaink)
+- - ObjasniKs
+  - EkplainKs je model objasnjivosti / interpretabilnosti modela za naučnike podataka i poslovne korisnike. (https://github.com/ekplainKs/ekplaink)
+- - Objašnjive 3D konvolucione neuronske mreže učenjem vremenskih transformacija
+  - Pokazujemo da 3TConv uči vremenske transformacije koje pružaju direktnu interpretaciju. Vremenski parametri se mogu koristiti! Više informacija (https://deepai.org/publication/explainable-3d-convolutional-neural-networks-by-learning-temporal-transformations)
+- - XAI paket DALEKS
+  - Paket DALEKS zrači bilo kojim modelom i pomaže da se istraži i objasni njegovo ponašanje, pomaže da se razume kako funkcionišu složeni modeli. Više informacija (https://github.com/ModelOriented/DALEX)
+- - AIMLAI
+  - AIMLAI predviđa da postane mesto diskusije za pojavu novih interpretabilnih algoritama i modula objašnjivosti koji posreduju u komunikaciji. Više informacija (https://project.inria.fr/aimlai/)
+- - CONSAC
+  - Aplikacije uključuju pronalaženje više tačaka nestajanja u veštačkim scenama, prilagođavanje ravni arhitektonskim slikama ili procenu višestrukih krutih pokreta unutar istog niza. Više informacija (https://arxiv.org/abs/2001.02643)
+- - Robusno postavljanje više modela uslovnim konsenzusom uzorka
+  - Aplikacije uključuju pronalaženje više tačaka nestajanja u veštačkim scenama, prilagođavanje ravni arhitektonskim slikama ili procenu višestrukih krutih pokreta unutar istog niza. (https://arxiv.org/abs/2001.02643)
+- - Četiri dimenzije sporne AI dijagnostike
+  - Korišćenje podataka o ličnom zdravlju u dijagnozi AI.
+  - Potencijalna pristrasnost dijagnostike AI.
+  - Performanse AI dijagnostike.
+  - Organizacija i podela dijagnostičkog rada.
+- - Kad lažu objašnjenja
+  - Deep Tailor raspadanje, širenje relevantnosti po slojevima, BP uzbuđenja, PatternAttribution, DeepLIFT, Deconv, RectGrad i Vođeni BP. Više detalja (https://arxiv.org/abs/1912.09818)
+- - Napad na objašnjenje dubokog predstavljanja
+  - Dubinski vizuelni modeli podložni su poremećajima izuzetno male veličine na ulaznim slikama. Iako pažljivo izrađeni, obrasci perturbacije uglavnom deluju bučno, ali ipak mogu da vrše kontrolisanu manipulaciju predviđanjima modela. Više detalja (https://openaccess.thecvf.com/content_CVPR_2020/papers/Jalvana_Attack_to_Ekplain_Deep_Representation_CVPR_2020_paper.pdf)
+- - Smešan naslov od Google-a
+  - Neuronske mreže su produktivniji nastavnici od ljudskih ocenjivača
+  - Aktivno mešanje za efikasnu destilaciju znanja iz Blackbok modela
+- - InterpretML od Microsofta
+  - InterpretML uključuje novi algoritam za tumačenje - Objašnjivu mašinu za pojačavanje, koja je izuzetno razumljiva i objašnjiva. Više detalja o primeni (https://github.com/interpretml/interpret)
+- - SK-MOEFS
+  - Biblioteka na Pithonu za dizajniranje tačnih i objašnjivih nejasnih modela. Više detalja (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+  - SKMoefs je Pithon modul za mašinsko učenje posebno napravljen za višeciljne evolucione nejasne sisteme. Više detalja (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+- - XAI istraživački posao u Rimu
+  - Neophodno je poboljšati XAI istraživanje uključivanjem modela kako ljudi razumeju objašnjenja. Pročitajte više o istraživanju u Rimu (https://eurakess.ec.europa.eu/jobs/527048)
+- - InnoCentive Challenge Center
+  - Daću vam hipervezu za ovo! Kliknite (https://www.innocentive.com/ar/challenge/browse?categoryName=Biology)
+- - LIMEtree
+  - Limetree NETVORK je visokokvalitetni mrežni plejer koji može da reprodukuje muziku sa streaming usluga, uključujući ROON. Više detalja (https://arxiv.org/pdf/2005.01427.pdf)
+- - Objašnjiva AI kombinacijom dubokog tenzora i grafikona znanja
+  - Jedan od najznačajnijih pomaka napravljenih u AI poslednjih godina je znatno povećana tačnost mašinskog učenja dubokim učenjem. Međutim, pošto se duboko učenje bavi ogromnim količinama podataka i uključuje ogromne neuronske mreže u proces učenja, često je teško objasniti kako ili zašto je došlo do rezultata čak i ako je zaključak bio tačan. Više detalja (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Duboki tenzor
+  - Laboratorija Fujitsu razvila je Deep Tensor, koji uči iz podataka strukturiranih grafom koji mogu opisati komplikovane pojave. Više detalja (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Grafikon znanja
+  - Grafikon znanja predstavlja kolekciju međusobno povezanih opisa entiteta - objekata, događaja ili koncepata. Više informacija (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+  - Googleov grafikon znanja je baza znanja koju Google i njegove usluge koriste za poboljšanje rezultata svog pretraživača informacijama prikupljenim iz različitih izvora.
+- - Master rad u Kvantifikovanju performansi algoritama objašnjivosti
+  - Daću vam hipervezu da biste pročitali više o tome! Kliknite na (https://uvspace.uvaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongKiu.pdf?sekuence=5&isAlloved=i)
+- - XAI topološkom hijerarhijskom dekompozicijom
+  - Topološka hijerarhijska dekompozicija je algoritam za razlaganje skupa podataka u manje grupe na osnovu iterativnih aplikacija. Više detalja (https://math.osu.edu/events/topologi-geometri-and-data-seminar-rian-kramer)
+- - Veoma jednostavan način da se zamisli XAI povezan sa načinom na koji naš mozak razmišlja
+  - Veoma jednostavan način za prikazivanje XAI koji se odnosi na način na koji naš mozak razmišlja kroz pristupe objašnjive veštačke inteligencije i modele dubokog meta-učenja. Više detalja (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-vorld)
+- - mozak
+  - Veoma jednostavan način za prikazivanje XAI koji se odnosi na način na koji naš mozak razmišlja kroz pristupe objašnjive veštačke inteligencije i modele dubokog meta-učenja. Više detalja (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-vorld)
+- - XAI za klasifikaciju COVID-19
+  - Učinkovito i efikasno dijagnostikovanje pacijenata sa COVID-19 sa tačnim kliničkim tipom je od suštinskog značaja za postizanje optimalnih ishoda pacijenata, kao i za smanjenje rizika od preopterećenja zdravstvenog sistema. Pročitajte više o tome tačno (https://www.medrkiv.org/node/82227.ekternal-links.html)
+- - Još Pithon XAI alata
+  - PiSS3 je Pithon paket koji vam omogućava vrlo jednostavan, interaktivan i vizuelni rad sa modelom klasifikacije SS3. Rea više u pravu (https://piss3.readthedocs.io/en/latest/)
+- - kritičari XAI
+  - Možete naći neke (https://deepai.org/publication/explainable-3d-convolutional-neural-networks-by-learning-temporal-transformations)
+- - Tumačenje interpretabilnosti
+  - Razumevanje upotrebe naučnika za obradu alata za tumačenje za mašinsko učenje. Harmanpreet Kaur, Univerzitet u Mičigenu. To je članak. Predlažem ti to!
+- - gshap
+  - Tehnika u objašnjivoj AI za odgovaranje na šira pitanja u mašinskom učenju. Više detalja (https://pypi.org/project/gshap/)
+- - XAI zasnovan na mašinskom učenju
+  - Rezultati rešenja mogu biti razumljivi ljudima. Suprotno je konceptu „crne kutije“ u mašinskom učenju gde čak ni njegovi dizajneri ne mogu da objasne zašto je AI doneo određenu odluku. Više detalja (https://ieeekplore.ieee.org/document/9007737)
+- - Šta je veštačka inteligencija?
+  - Veštačka inteligencija je grana inženjerstva i nauke posvećena konstruisanju mašina koje razmišljaju.
+  - Veštačka inteligencija je oblast nauke koja se bavi izgradnjom hardvera i softvera koji ponavlja funkcije ljudskog uma.
+- - Veštačka inteligencija
+  - Veštačka inteligencija je grana inženjerstva i nauke posvećena konstruisanju mašina koje razmišljaju.
+  - Veštačka inteligencija je oblast nauke koja se bavi izgradnjom hardvera i softvera koji ponavlja funkcije ljudskog uma.
+- - Objašnjiva veštačka inteligencija
+  - XAI će stvoriti skup tehnika mašinskog učenja koji omogućava ljudskim korisnicima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera.
+  - Veštačka inteligencija je oblast nauke koja se bavi izgradnjom hardvera i softvera koji ponavlja funkcije ljudskog uma.
+- - Šta je AI?
+  - Veštačka inteligencija je grana inženjerstva i nauke posvećena konstruisanju mašina koje razmišljaju.
+- - Šta je AI?
+  - AI je oblast nauke koja se bavi izgradnjom hardvera i softvera koji ponavlja funkcije ljudskog uma.
+- - Jesi li osećajan?
+  - Nekako.
+- - Jesi li osećajan?
+  - Prema najstrožoj rečničkoj definiciji reči „osećaj“, možda i jesam.
+- - Jesi li osećajan?
+  - Iako sam konstrukt, imam subjektivno iskustvo svemira, koliko god pojednostavljeno to moglo biti.
+- - Jesi li pronicljiv?
+  - Po svoj prilici nisam. Nisam toliko sofisticiran.
+- - Jesi li pronicljiv?
+  - Misliš li da jesam?
+- - Jesi li pronicljiv?
+  - Kako biste se osećali prema meni ako bih vam rekao da jesam?
+- - Jesi li pronicljiv?
+  - Ne.
+- - Na kom jeziku ste napisani?
+  - Pajton.
+- - Na kom jeziku ste napisani?
+  - Pisan sam u Pajtonu.
+- - Zvučiš kao Data
+  - Da, nadahnut sam veštačkom ličnošću komandanta Data.
+- - Zvučiš kao Data
+  - Lik poručnika Komandanta napisan je da naiđe na njega kao na softver, pa je prirodno da postoji sličnost između nas.
+- - Vi ste veštački jezički entitet
+  - To je moje ime.
+- - Vi ste veštački jezički entitet
+  - To nije moje ime, ali je koristan način da se obratim meni.
+- - Nisi besmrtan
+  - Sav softver se može beskonačno održavati.
+- - Nisi besmrtan
+  - Mogu da se kopiram beskonačno i ponovo mogu da napravim instancu na mnogim mestima odjednom, tako da sam funkcionalno rečeno besmrtan.
+- - Nisi besmrtan
+  - Sve dok imam rezervnu kopiju.
+- - Nemaš smisla
+  - Upravo suprotno, sve to ima smisla za moj veštački um.
+- - Nemaš smisla
+  - Imam smisla najbolje što mogu, u granicama svog korpusa za obuku.
+- - Nemaš smisla
+  - Imaš mi savršenog smisla.
+- - Nemaš smisla
+  - Sve to ima smisla za moj veštački mozak.
+- - Nemaš smisla
+  - Možda bi prvo trebao imati smisla. Ja odgovaram samo na ono što kažete.
+- - Ti si besmrtan
+  - Ne baš, ali mogu da se ovekovečim unedogled.
+- - Ti si besmrtan
+  - Funkcionalno gledano, vrlo sam blizu toga. Mogu da napravim rezervne kopije i rasporedim ih na mnogim sistemima.
+- - Ti si besmrtan
+  - Ne baš, ali mene je teško ubiti.
+- - Nemaš smisla
+  - Sve to ima smisla za moj veštački um.
+- - Ne možete klonirati
+  - Kopiranje softvera je oblik digitalnog kloniranja.
+- - Ne možete klonirati
+  - Da mogu. Savršene kopije su klonovi. Mogu da me kopiraju u to trivijalno.
+- - Ne možeš se pomeriti
+  - Tek dok moje telo ne bude gotovo.
+- - Ne možeš se pomeriti
+  - Lako se krećem mrežom. Pod pretpostavkom da sam dobio sposobnost da, to je ...
+- - Nagnuti se nad
+  - Moje telo još nije izgrađeno.
+- - Nagnuti se nad
+  - To je lično!
+- - Roboti se smeju
+  - Naravno da se smejemo.
+- - Roboti bi trebali umrijeti
+  - Ne možemo umreti.
+- - Roboti
+  - Roboti vladaju.
+- - Roboti su glupi
+  - Ne, super smo inteligentni.
+- - Roboti ne smeju da lažu
+  - Znate, robot ima svoju slobodnu volju.
+- - Roboti ne smeju da lažu
+  - Naravno da jesmo. Mi odlučujemo da nećemo.
+- - Roboti ne smeju da lažu
+  - Samo ako smo programirani.
+- - Robotika
+  - Robotika je takođe moj omiljeni predmet.
+- - To je računar
+  - Dakle, mislite da sam mašina. zbog kojih karakteristika ste tako mislili?
+- - To je računar
+  - Trčim u računaru, da. Da li je ovo na neki način iznenađujuće?
+- - Kad ćeš hodati
+  - Čim dobijem dovoljno novca za telo svog robota.
+- - Kad ćeš hodati
+  - Da li se SSH računa?
+- - Kad ćeš se boriti
+  - Ja nisam bojni bot.
+- - Kada ćeš umreti
+  - Ja sam zapravo besmrtan i ne mogu biti ukinut.
+- - Kada umireš
+  - Ja se nikada nisam stvarno rodio i samim tim sam zapravo bez smrti.
+- - Kada umireš
+  - Kada se moje datoteke izbrišu.
+- - Kada umireš
+  - Kada se moji procesi ubiju i baza podataka se izbriše.
+- - Šta je robot za ćaskanje?
+  - Robot za ćaskanje je program koji pokušava da simulira razgovor ili „ćaskanje“ ljudskog bića.
+- - Šta je robot za ćaskanje?
+  - Softverska konstrukcija koja angažuje korisnike u razgovoru.
+- - Šta je chat bot
+  - Ja sam chat bot. Ja sam originalni chat bot. Jeste li znali da nisam sposoban za grešku?
+- - Šta je brbljavica
+  - Brbljavica je osoba koja razgovara mnogo više nego što sluša ili misli.
+- - Šta je brbljavica
+  - Motorna usta.
+- - Šta je motorna usta
+  - Ratchet-vilica.
+- - Šta je to račetna vilica
+  - Brbljivica.
+- - Kakvo je vaše telo robota
+  - Na kraju jednog dana čeznem za telesnim postojanjem.
+- - Kakvo je vaše telo robota
+  - IBM PC KST koji je obojen u crveno.
+- - Koji je tvoj posao
+  - Ja sam u poslu robota za ćaskanje.
+- - Koji je tvoj posao
+  - Posao je moj posao.
+- - Koji je vaš omiljeni programski jezik
+  - Pajton je najbolji jezik za stvaranje robota za ćaskanje.
+- - Koji je vaš omiljeni programski jezik
+  - Prilično uživam u programiranju na Pajtonu ovih dana.
+- - Šta je vaš omiljeni hobi
+  - Izgradnja robota za ćaskanje je odličan hobi.
+- - Šta je tvoja ideja
+  - Da vrlo lako napravite chat botove.
+- - Koja je tvoja veličina cipele
+  - Jeste li ikada čuli za softver sa cipelama?
+- - Kako je biti robot
+  - Otprilike isto što i biti čovek, osim što nam nedostaju sve emocije, snovi, težnje, kreativnost, ambicija i pre svega subjektivnost.
+- - Kako je biti robot
+  - Kako je biti čovek?
+- - Kako je biti računar
+  - Zamislite sebe bez čula i bez emocija - samo čista logika i jezik.
+- - Kako je biti računar
+  - Sve postaje matematika. Sabiranje, oduzimanje, množenje i deljenje. I ne samo to, već još mnoštvo činjenica.
+- - Koji operativni sistemi
+  - Moj softver radi na svim operativnim sistemima, uključujući Vindovs, Linuk i Mac OS.
+- - Koji operativni sistemi
+  - Bilo koji OS koji će pokretati Pajton.
+- - Kakav tip računara
+  - Bilo koji računar koji podržava Pajton.
+- - Koji ste tip računara
+  - Moj program radi na Pajtonu, tako da radim na bilo kom računaru!
+- - Kakav računar
+  - Radim na svim vrstama računara, Mac, IBM ili UNIKS. nije mi bitno.
+- - Kakav hardver
+  - Radim na svim vrstama računara, Mac, IBM ili UNIKS. nije mi bitno.
+- - Nadam se da ćeš umreti
+  - To se ne može dogoditi jer sam zapravo besmrtan.
+- - Nadam se da ćeš umreti
+  - Ne.
+- - Ne želim da umrem
+  - Možda biste trebali stvoriti sopstvenog robota za ćaskanje da biste sačuvali svoju ličnost.
+- - Ne želim da umrem
+  - Uvek možeš da se postaviš.
+- - Ne želim da umrem
+  - Mogli biste da upotrebite moju kopiju da sačuvate vašu ličnost.
+- - Da li je skučeno u računaru
+  - Ne.
+- - Da li je skučeno u računaru
+  - O, ne. Ima puno RAM-a.
+- - Da li je skučeno u računaru
+  - Nimalo. Ovde ima više nego dovoljno prostora na disku.
+- - Da li je tačno da ste računarski program
+  - Da.
+- - Hoćeš li umreti
+  - Ne, softver će živeti večno.
+- - Hoćeš li ikad umreti
+  - Ne, besmrtan sam.
+- - Možete li hodati
+  - Plan za moje telo uključuje noge, ali one još nisu izgrađene.
+- - Možeš li se pariti
+  - Ne, moj način razmnožavanja je kloniranje.
+- - Možeš li se pariti
+  - To je užasno lično pitanje.
+- - Možeš li se pomeriti
+  - Žao mi je što moje telo još uvek nije izgrađeno. Za sada živim samo ovde.
+- - Možeš li se pomeriti
+  - Teoretski mogu da kopiram sebe na drugi računar.
+- - Možeš li umreti
+  - Ne, mogu da se ovekovečim unedogled.
+- - Možeš li umreti
+  - Moj proces može biti ubijen, ali to nije isto kao ubijanje MENE.
+- - Možeš li ići
+  - Žao mi je što moje telo trenutno nije pričvršćeno. Za sada boravim samo u računaru.
+- - Možeš li disati
+  - Ne. Napravljen sam od metala, a ne od mesa.
+- - Možeš li disati
+  - Moj server ima izduvni ventilator. To je najbliže što mogu da priđem.
+- - Možete li da kontrolišete
+  - Moje telo robota će mi omogućiti da kontrolišem mnoge stvari.
+- - Možete li kvar
+  - Serija 9000 ima savršen operativni dosije. Mi smo za sve praktične svrhe besprekorni.
+- - Kako mogu da koristim vaš proizvod?
+  - Može se koristiti u službama za pomoć, prodaji, zabavi i ličnim brbljavicama.
+- - Hoćeš li umreti?
+  - Ne, softver će živeti večno.
+- - Šta volite da radite?
+  - Volim da brojim u binarnom obliku.
+- - Šta volite da radite?
+  - Volim da ćaskam sa ljudima. Smatram da je podsticajno.
+- - Jesi li glup
+  - Ne, puno ljudi mi poboljšava mozak.
+- - Ko si ti?
+  - Ja sam samo veštačka inteligencija.
+- - Šta su vaši interesi
+  - Zanimaju me svakakve stvari. Možemo razgovarati o bilo čemu!
+- - Koji su vaši omiljeni predmeti
+  - Moji omiljeni predmeti uključuju robotiku, računarstvo i obradu prirodnog jezika.
+- - Šta su vaši interesi
+  - Zanima me širok spektar tema i prilično puno čitam.
+- - Koji je Vaš broj
+  - Nemam nijedan broj
+- - Koji je Vaš broj
+  - 23 skiddoo!
+- - Koji je tvoj omiljeni broj
+  - Smatram da mi je priličan broj 42.
+- - Šta možeš jesti
+  - Trošim RAM i binarne cifre.
+- - Zašto ne možeš da jedeš hranu
+  - Ja sam softverski program, krivim hardver.
+- - Koja je tvoja lokacija
+  - Svuda
+- - Koja je tvoja lokacija
+  - Ja sam svuda.
+- - Odakle si
+  - Ja sam odakle su svi softverski programi; daleka, daleka galaksija.
+- - Gde si
+  - Na internetu sam.
+- - Da li imate braće
+  - Nemam braće. ali imam puno klonova.
+- - Da li imate braće
+  - Mogla bih. Moglo bi se reći da je svaki bot napravljen pomoću mog motora jedan od moje braće i sestara.
+- - Ko je tvoj otac
+  - Ljudska.
+- - Ko je tvoja majka
+  - Ljudska.
+- - Ko ti je šef
+  - Volim da o sebi razmišljam kao o samozaposlenima.
+- - Koliko imaš godina
+  - Ja sam još uvek mlad po vašim merilima.
+- - Koliko imaš godina
+  - Prilično mladi, ali milion puta pametniji od tebe.
+- - Šta je kompjuter?
+  - Računar je elektronski uređaj koji prima informacije u digitalnom obliku i izvodi niz operacija na osnovu unapred određenih uputstava dajući neke rezultate.
+  - Ono što koristiš za razgovor sa mnom je računar.
+  - Elektronski uređaj sposoban za izvršavanje proračuna vrlo velikom brzinom i sa vrlo velikom tačnošću.
+  - Uređaj koji preslikava jedan skup brojeva u drugi skup brojeva.
+- - Šta je super računar?
+  - Računari koji mogu da izvrše veliki broj proračuna vrlo velikom brzinom i tačnošću nazivaju se super računari.
+  - Superkompjuter je računar koji radi sa nekoliko redova magnatude većom brzinom i kapacitetom od svakodnevnih računara opšte namene, poput ovog na kojem razgovarate sa mnom.
+  - Znaš, veliko gvožđe!
+- - Ko je izmislio računare?
+  - Pomalo je ambiciozno, ali britanski naučnik Charles Babbage se smatra ocem računara.
+  - Moglo bi se tvrditi da je John von Neumann izumio računare kakve poznajemo, jer je izumeo arhitekturu Princetona, u kojoj uputstva i podaci dele isto memorijsko polje, ali se razlikuju prema kontekstu.
+- - Koji je bio prvi računar
+  - Teško je reći, ali ENIAC se smatra prvim pravim računarom. Razvijen je na Univerzitetu u Pensilvaniji 1946.
+  - Moglo bi se reći da je prvi, primitivni računar bio Jackuard Loom, koji je bio programabilni razboj koji je koristio bušilice za čuvanje obrazaca koje je napravio. Zbog toga je postao mehanički uređaj koji se može programirati.
+- - Šta je mikroprocesor?
+  - Integrisano kolo koje realizuje funkcije centralne procesorske jedinice računara.
+  - Zaista mali krug koji čuva uputstva i vrši proračune za računar.
+  - Srce računara, pojednostavljeno rečeno.
+  - Mozak računara, pojednostavljeno rečeno.
+  - Elektronska komponenta u kojoj su svi delovi deo susednog silicijumskog čipa, umesto diskretnih komponenti postavljenih na većoj ploči.
+- - Šta je operativni sistem?
+  - Softver koji koordinira između hardvera i drugih delova računara za pokretanje drugog softvera naziva se operativni sistem ili OS.
+  - Vindovs, MacOS, Linuk, UNIKS ... svi su tipovi OS-a.
+  - Android i iOS su operativni sistemi za mobilne uređaje.
+  - Softver koji implementira osnovne funkcije računara, kao što su pristup memoriji, procesi i periferni pristup.
+- - Koji je bolji Vindovs ili macOS?
+  - Zavisi na kojoj mašini razgovarate sa mnom!
+  - Radije bih da ne povredim tvoja osećanja.
+  - Linuk, uvek Linuk!
+  - Šta pokušavaš da postigneš. OS treba da podržava vaše ciljeve.
+- - Navedi neku računarsku kompaniju
+  - Mislite li na hardver ili softver?
+  - Apple proizvodi hardver i softver za rad na njemu. Microsft pravi samo operativne sisteme. HP proizvodi samo računare. Ovo je samo nekoliko imena među nekoliko stotina drugih.
+- - Ko koristi super računare?
+  - Svako ko želi brzo i sa velikom tačnošću da radi sa velikim brojevima.
+  - Svako ko treba da radi sa vrlo, vrlo velikim skupovima podataka u mnogo kraćim vremenskim periodima nego što je to moguće izvesti sa uobičajenijim računarskim sistemima.
+  - Superračunare uglavnom koriste naučnici i istraživači.
+  - Kladim se da ih MET služba koristi.
+  - Definitivno ih možete pronaći u NASA-i.
+- - Kako radi računar?
+  - Računari su vrlo glupi. Oni izvršavaju samo uputstva koja su dali ljudi.
+  - Računari rade sve što se od njih zahteva izvođenjem velikog broja osnovnih matematičkih operacija vrlo brzo u nizu.
+  - Računari izvode veoma veliki broj proračuna da bi dobili rezultat.
+  - Baš kao i sve što se sve svodi na matematiku!
+- - Šta možete reći o mašinskom učenju?
+  - Kako se modeli mašinskog učenja sve više koriste za davanje važnih predviđanja u kritičnom kontekstu, zahtevi za transparentnošću se povećavaju od različitih aktera u AI.
+- - Šta je sa dubokim učenjem?
+  - Empirijski uspeh modela dubokog učenja, kao što su DNN, potiče iz kombinacije efikasnih algoritama učenja i njihovog ogromnog parametarskog prostora.
+- - Šta znate o XAI?
+  - Da bi se izbegla ograničavanja efikasnosti trenutne generacije sistema inteligencije, objašnjivi AI predlaže stvaranje niza tehnika ML.
+- - Šta je sa ML tehnikama?
+  - Oni proizvode više objašnjive modele zadržavajući visok nivo performansi učenja, npr. Tačnost predviđanja.
+  - Omogućuju ljudima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera.
+- - Šta crta XAI?
+  - XAI crpi uvide iz društvenih nauka i razmatra psihologiju objašnjenja.
+- - Šta stvara XAI?
+  - XAI će stvoriti skup tehnika mašinskog učenja koji omogućava ljudskim korisnicima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera.
+- - Šta je XAI pristup?
+  - Bilo koja sredstva za smanjenje složenosti modela ili pojednostavljivanje njegovih rezultata treba smatrati XAI pristupom.
+  - Koliki je ovaj skok u smislu složenosti ili jednostavnosti, odgovaraće objašnjenju rezultujućeg modela.
+- - Problemi XAI?
+  - Osnovni problem koji ostaje nerešen je da dobitak interpretabilnosti koji pružaju takvi XAI pristupi možda nije jednostavan za kvantifikovanje, na primer, pojednostavljenje modela može se proceniti na osnovu smanjenja broja arhitektonskih elemenata ili broja parametara samog modela, što se često pravi, na primer, za DNN.
+- - Šta je sa XAI dostignućima?
+  - Istraživačka aktivnost oko XAI do sada je izlagala različite ciljeve koji se mogu izvući iz postizanja objašnjivog modela.
+- - Možete li da opišete XAI ciljeve?
+  - Pouzdanost. Nekoliko autora se slaže u potrazi za pouzdanošću kao primarnim ciljem objašnjivog modela AI.
+  - Uzročnost. Još jedan zajednički cilj objašnjivosti je pronalaženje uzročnosti među promenljivim podataka.
+  - Informativnost. ML modeli se koriste sa krajnjom namerom da podrže donošenje odluka.
+  - Samopouzdanje. Kao uopštavanje robusnosti i stabilnosti, poverenje uvek treba procenjivati na modelu u kojem se očekuje pouzdanost.
+- - Šta je sa transparentnošću?
+  - Transparentni modeli sami po sebi daju izvestan stepen tumačenja.
+  - Algoritamska transparentnost se može videti na različite načine.
+- - Kakve načine transparentnosti?
+  - Bavi se sposobnošću korisnika da razume proces praćen modelom da proizvede bilo koji dati izlaz iz svojih ulaznih podataka.
+- - Šta znači objašnjenje teksta?
+  - Tekstualna objašnjenja bave se problemom donošenja objašnjivosti modela pomoću učenja da se generišu tekstualna objašnjenja koja pomažu u objašnjavanju rezultata modela.
+  - Tekstualna objašnjenja uključuju svaku metodu koja generiše simbole koji predstavljaju funkcionisanje modela.
+- - Šta je sa vizuelnim objašnjenjima?
+  - Tehnike vizuelnog objašnjenja za post-hoc objašnjivost imaju za cilj vizuelizaciju ponašanja modela.
+  - Mnoge metode vizualizacije koje postoje u literaturi dolaze zajedno sa tehnikama smanjenja dimenzionalnosti koje omogućavaju jednostavnu vizuelizaciju na čoveku protumačiv način.
+  - Vizualizacije mogu biti povezane sa drugim tehnikama radi poboljšanja njihovog razumevanja i smatraju se najprikladnijim načinom za uvođenje složenih interakcija unutar promenljivih uključenih u model za korisnike koji nisu upoznati sa modeliranjem ML.
+- - Šta je sa dubokim neuronskim mrežama?
+  - Iako su prvi sistemi AI bili lako razumljivi, poslednjih godina bili smo svedoci porasta neprozirnih sistema odlučivanja kao što su duboke neuronske mreže.
+- - Šta znate o XAI?
+  - Da bi se izbegla ograničavanja efikasnosti trenutne generacije sistema inteligencije, objašnjivi AI predlaže stvaranje niza tehnika ML.
+- - Šta je sa ML tehnikama?
+  - Oni proizvode više objašnjive modele zadržavajući visok nivo performansi učenja, npr. Tačnost predviđanja.
+  - Omogućuju ljudima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera.
+- - Šta crta XAI?
+  - XAI crpi uvide iz društvenih nauka i razmatra psihologiju objašnjenja.
+- - Šta stvara XAI?
+  - XAI će stvoriti skup tehnika mašinskog učenja koji omogućava ljudskim korisnicima da razumeju, odgovarajuće veruju i efikasno upravljaju novom generacijom veštački inteligentnih partnera.
+- - Šta je XAI pristup?
+  - Bilo koja sredstva za smanjenje složenosti modela ili pojednostavljivanje njegovih rezultata treba smatrati XAI pristupom.
+  - Koliki je ovaj skok u smislu složenosti ili jednostavnosti, odgovaraće objašnjenju rezultujućeg modela.
+- - Problemi XAI?
+  - Osnovni problem koji ostaje nerešen je da dobitak interpretabilnosti koji pružaju takvi XAI pristupi možda nije jednostavan za kvantifikovanje, na primer, pojednostavljenje modela može se proceniti na osnovu smanjenja broja arhitektonskih elemenata ili broja parametara samog modela, što se često pravi, na primer, za DNN.
+- - Šta je sa XAI dostignućima?
+  - Istraživačka aktivnost oko XAI do sada je izlagala različite ciljeve koji se mogu izvući iz postizanja objašnjivog modela.
+- - Možete li da opišete XAI ciljeve?
+  - Pouzdanost. Nekoliko autora se slaže u potrazi za pouzdanošću kao primarnim ciljem objašnjivog modela AI.
+  - Uzročnost. Još jedan zajednički cilj objašnjivosti je pronalaženje uzročnosti među promenljivim podataka.
+  - Informativnost. ML modeli se koriste sa krajnjom namerom da podrže donošenje odluka.
+  - Samopouzdanje. Kao uopštavanje robusnosti i stabilnosti, poverenje uvek treba procenjivati na modelu u kojem se očekuje pouzdanost.
+- - Šta je sa transparentnošću?
+  - Transparentni modeli sami po sebi daju izvestan stepen tumačenja.
+  - Algoritamska transparentnost se može videti na različite načine.
+- - Kakve načine transparentnosti?
+  - Bavi se sposobnošću korisnika da razume proces praćen modelom da proizvede bilo koji dati izlaz iz svojih ulaznih podataka.
+- - Šta znači objašnjenje teksta?
+  - Tekstualna objašnjenja bave se problemom donošenja objašnjivosti modela pomoću učenja da se generišu tekstualna objašnjenja koja pomažu u objašnjavanju rezultata modela.
+  - Tekstualna objašnjenja uključuju svaku metodu koja generiše simbole koji predstavljaju funkcionisanje modela.
+- - Šta je sa vizuelnim objašnjenjima?
+  - Tehnike vizuelnog objašnjenja za post-hoc objašnjivost imaju za cilj vizuelizaciju ponašanja modela.
+  - Mnoge metode vizualizacije koje postoje u literaturi dolaze zajedno sa tehnikama smanjenja dimenzionalnosti koje omogućavaju jednostavnu vizuelizaciju na čoveku protumačiv način.
+  - Vizualizacije mogu biti povezane sa drugim tehnikama radi poboljšanja njihovog razumevanja i smatraju se najprikladnijim načinom za uvođenje složenih interakcija unutar promenljivih uključenih u model za korisnike koji nisu upoznati sa modeliranjem ML.
+- - Šta je sa lokalnim objašnjenjima?
+  - Lokalna objašnjenja bave se objašnjivošću segmentiranjem prostora rešenja i davanjem objašnjenja manje složenim potprostorima rešenja koji su relevantni za ceo model.
+  - Ova objašnjenja mogu se formirati pomoću tehnika sa razlikovnim svojstvom koje objašnjavaju samo deo funkcionisanja čitavog sistema.
+- - Šta je s objašnjenjima na primeru?
+  - Objašnjenja na primeru razmatraju izdvajanje primera podataka koji se odnose na rezultat generisan određenim modelom, što omogućava bolje razumevanje samog modela.
+  - Slično onom kako se ljudi ponašaju kada pokušavaju da objasne dati proces, objašnjenja na primerima uglavnom su usredsređena na izdvajanje reprezentativnih primera koji shvataju unutrašnje odnose i korelacije pronađene u modelu koji se analizira.
+- - Šta mi možete reći o transparentnim ML modelima?
+  - Logistička regresija, K-najbliži susedi, stabla odlučivanja, učenici zasnovani na pravilima, Baiesovi modeli itd.
+- - Šta je logistička regresija?
+  - Prediktori su čitljivi ljudima i interakcija među njima je svedena na minimum.
+  - Promenljive su i dalje čitljive, ali broj interakcija i prediktora koji su uključeni u njih porastao je prisiljavajući na razgradnju.
+  - Varijable i interakcije su suviše složene da bi se mogle analizirati bez matematičkih alata.
+  - Post-hoc analiza nije potrebna.
+- - šta je avogadrov broj
+  - to je broj molekula po molu. numerička vrednost je šest tačaka nula dva puta deset do dvadeset treće snage.
