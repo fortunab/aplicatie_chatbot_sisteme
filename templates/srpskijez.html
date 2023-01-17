@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="/static/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="/static/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="/static/media/refbot.jpg">
+    <title>XAIBOT</title>
+
+    <style>
+        .userText {
+            color: white;
+            font-family: Arial;
+            font-size: 17px;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .userText span {
+            background-color: blue;
+            padding: 10px;
+            border-radius: 15%;
+        }
+
+        .dateText {
+            color: blue;
+            font-family: "Times New Roman";
+            font-size: 17px;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .dateText span {
+            background-color: gold;
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+        .botText {
+            color: black;
+            font-family: Arial;
+            font-size: 17px;
+            text-align: left;
+            line-height: 30px;
+        }
+
+        .botText span {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 15%;
+        }
+
+        .vertical-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        .button {
+          background-color: #009688;
+          border: none;
+          color: white;
+          padding: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 10px;
+          margin: 4px 2px;
+        }
+        .button4 {border-radius: 12px;}
+        .button5 {border-radius: 20%;}
+
+        #userInput2 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+        #userInput3 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+
+        #userInput4 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+
+        #userInput5 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+
+        #userInput6 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+
+        #botText_n1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 60px;
+        }
+
+        .hintText {
+            color: darkgoldenrod;
+            font-family: monospace;
+            font-size: 17px;
+            text-align: left;
+            line-height: 30px;
+        }
+
+        .hintText span {
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            border-radius: 2px;
+        }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+    </style>
+  </head>
+  <body style="background-color: white;">
+    <h1>XAIBOT, Explainable AI Trilingual Chatbot</h1>
+    <div class="align-content-center" align="center">
+    <div class="container-fluid">
+
+        <div align="center" style="margin-top: 30px">
+                <table>
+                    <tr>
+                        <th>Please choose a language</th>
+                    </tr>
+
+                    <tr>
+                        <td><a href="/lromana.html">CHATBOT limba română</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/ceva">CHATBOT english language</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/srpskijez.html">Četbot srpski jezik</a></td>
+                    </tr>
+                </table>
+                </div>
+
+
+
+
+      <div id="chatbox">
+          <marquee behavior="scroll" bgcolor="gold" loop="-1" width="70%">
+               <i>
+                  <font color="blue">
+                    <strong>
+                        Razgovor je počeo u:
+                     <span id="time"></span>
+                    </strong>
+                  </font>
+               </i>
+          </marquee>
+
+          <div id="textmultiplu" class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messag"></span></p></div>
+          <script>
+            $('#messag').html('KSAJBOT kuca...');
+            setTimeout(function(){
+                $('#messag').html('KSAJBOT: Zdravo!');
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messag2"></span></p></div>';
+                $('#textmultiplu').append(add);
+                $('#messag2').html('KSAJBOT kuca...');
+                setTimeout(function () {
+                    $('#messag2').html("KSAJBOT: Ja sam KSAJBOT, virtuelni pomagač objašnjive veštacke inteligencije.");
+                    var add2 = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messag3"></span></p></div>';
+                    $('#textmultiplu').append(add2);
+                    $('#messag3').html('KSAJBOT kuca...');
+                    setTimeout(function () {
+                        $('#messag3').html("KSAJBOT: Koji je Vaš nadimak?");
+                    }, 500);
+                }, 500);
+
+            }, 500);
+          </script>
+
+
+            <div id="message1"></div>
+            <div id="message2"></div>
+            <script type="text/javascript">
+                /*$(document).ready(function() {
+                    $('#btn_2consMess').on('click', function() {
+                        $('#message1').html("KSAJBOT kuca...");
+                        setTimeout(function(){
+                            var div1 = document.getElementById("message1");
+                            div1.style.display = "block";
+                            if (div1.style.display !== "block") {
+                                div1.style.display = "block";
+                            }
+                            else {
+                               div1.style.display = "none";
+                            }
+                            $('#message2').html("Buna, cf?");
+                        },2000); //second message will appear 3 seconds later
+                    });
+                });*/
+
+            </script>
+      </div>
+
+      <script>
+          var today = new Date();
+          document.getElementById('time').innerHTML=today;
+      </script>
+
+      <div id="userInput">
+          <div id="textInput_id">
+            <input id="textInput" type="text" name="msg" style="background-color: gold" align="center" style="margin-top: 30px"
+                   placeholder="Poruka"> <button id="btn_2consMess" onclick="numele()">Pošalji</button>
+          </div>
+
+      </div>
+
+        <div id="botText_n1"></div>
+        <div id="userInput2"></div>
+        <div id="userInput3"></div>
+        <div id="userInput4"></div>
+        <div id="userInput5"></div>
+        <div id="userInput6"></div>
+
+
+        <script>
+            var input = document.getElementById("userInput");
+            input.addEventListener("keyup", function(event) {
+              var integ = 13;
+              if (event.keyCode === integ) {
+               event.preventDefault();
+               document.getElementById("btn_2consMess").click();
+              }
+            });
+        </script>
+
+      <script>
+
+        function numele() {
+            var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          $.get("/ime", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages1">' + 'KSAJBOT kuca...' + '</span></p>';
+            //$('#messages1').html();
+            setTimeout(function() {
+                $('#messages1').html('KSAJBOT: ' + data);
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages21">' + 'KSAJBOT kuca...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages21').html('KSAJBOT: Dozvolite me da Vas pitam, cime se bavite?');
+                    var btn1 = '<button id="botText4" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune3" onclick="conv1()">Studiram. </button>';
+                      var btn2 = '<button id="botText5" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune4" onclick="conv2()">Zaposlen sam. </button>';
+                      var btn3 = '<button id="botText6" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune5" onclick="conv3()">Radim kao frilenser. </button>';
+                      $("#userInput2").append(btn1);
+                      $("#userInput2").append(btn2);
+                      $("#userInput2").append(btn3);
+               }, 500);
+            }, 500);
+
+            $("#chatbox").append(botHtml);
+          });
+
+
+          var div1 = document.getElementById("textInput_id");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+          /*var div1 = document.getElementById("botText1");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }*/
+
+        }
+      </script>
+      <script>
+         function versiune1() {
+             var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText1 = "O KSAJ-u i o tvom znanju, razumu.";
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText1 ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          var raspuns = '<div id="textmultiplu" class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages2">' + 'KSAJBOT kuca...' + '</span></p></div>';
+             setTimeout(function() {
+               $('#messages2').html('KSAJBOT: Sjajno!');
+               var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages21">' + 'KSAJBOT kuca...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages21').html('KSAJBOT: Dozvolite me da Vas pitam, cime se bavite?');
+                    var btn1 = '<button id="botText4" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune3" onclick="conv1()">Studiram. </button>';
+                      var btn2 = '<button id="botText5" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune4" onclick="conv2()">Zaposlen sam. </button>';
+                      var btn3 = '<button id="botText6" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune5" onclick="conv3()">Radim kao frilenser. </button>';
+                      $("#userInput2").append(btn1);
+                      $("#userInput2").append(btn2);
+                      $("#userInput2").append(btn3);
+               }, 500);
+          }, 500);
+          $("#chatbox").append(raspuns);
+
+          var div1 = document.getElementById("botText2");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+          var div1 = document.getElementById("botText3");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+        }
+
+         function versiune2() {
+          var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText1 = "Želim da detektuješ spoljašnje veze.";
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText1 ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          var raspuns = '<div id="textmultiplu" class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages3">' + 'KSAJBOT kuca...' + '</span></p></div>';
+             setTimeout(function() {
+               $('#messages3').html('KSAJBOT: To je sjajno! Učiniću to!');
+               var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages31">' + 'KSAJBOT kuca...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages31').html('KSAJBOT: Jeste li spremni?');
+                    var hint1 = '<p class="hintText"><span>' + 'Pomoć: ukucajte DA ili NE' + '</span></p>';
+                    $("#chatbox").append(hint1);
+               }, 500);
+          }, 500);
+          $("#chatbox").append(raspuns);
+
+          var div1 = document.getElementById("botText2");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+          var div1 = document.getElementById("botText3");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+          var div1 = document.getElementById("textInput_id");
+          div1.style.display = "none";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+            document.getElementById('btn_2consMess').setAttribute('onclick','ref1()');
+          /*var btnref = '<button onclick="ref1()">Pošalji</button>';
+          $("#botText_n1").append(btnref);*/
+
+        }
+
+        function conv1() {
+             var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText1 = "Studiram";
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText1 ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          var raspuns = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages4">' + 'KSAJBOT kuca...' + '</span></p>';
+            setTimeout(function(){
+                $('#messages4').html('KSAJBOT: Ohoo! Bravo. Da li ti je teško na studijama?');
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages42"></span></p></div>';
+                $('#chatbox').append(add);
+                $('#messages42').html('KSAJBOT kuca...');
+                setTimeout(function () {
+                    $('#messages42').html('KSAJBOT: Slušajte. Izuzetno mi je drago što smo započeli naš razgovor. Ipak, hteo/la bih da počnemo sa radom.');
+                    var add2 = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages43"></span></p></div>';
+                    $('#chatbox').append(add2);
+                    $('#messages43').html('KSAJBOT kuca...');
+                    setTimeout(function () {
+                        $('#messages43').html('KSAJBOT: Da li ste spremni?');
+                        var hint1 = '<p class="hintText"><span>' + 'Pomoć: ukucajte DA ili NE' + '</span></p>';
+                        $("#chatbox").append(hint1);
+                    }, 500);
+                }, 500);
+
+            }, 500);
+          $("#chatbox").append(raspuns);
+
+          var div1 = document.getElementById("textInput_id");
+          div1.style.display = "none";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+          var div1 = document.getElementById("userInput2");
+          div1.style.display = "block";
+              if (div1.style.display !== "none") {
+                  div1.style.display = "none";
+              }
+              else {
+                  div1.style.display = "block";
+              }
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button onclick="discutie()">Pošalji</button>';
+            $("#userInput3").append(noubtn);*/
+        }
+
+        function conv2() {
+             var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText1 = "Zaposlen sam.";
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText1 ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          var raspuns = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages5">' + 'KSAJBOT kuca...' + '</span></p>';
+            setTimeout(function(){
+                $('#messages5').html('KSAJBOT: Sjajno! Da li je reč o preduzeću/ustanovi sa velikim kvalitetom i potencijalom?');
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages52"></span></p></div>';
+                $('#chatbox').append(add);
+                $('#messages52').html('KSAJBOT kuca...');
+                setTimeout(function () {
+                    $('#messages52').html('KSAJBOT: Slušajte. Drago mi je! Ipak, želim da počnemo.');
+                    var add2 = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages53"></span></p></div>';
+                    $('#chatbox').append(add2);
+                    $('#messages53').html('KSAJBOT kuca...');
+                    setTimeout(function () {
+                        $('#messages53').html('KSAJBOT: Može?');
+                        var hint1 = '<p class="hintText"><span>' + 'Pomoć: ukucajte DA ili NE' + '</span></p>';
+                        $("#chatbox").append(hint1);
+                    }, 500);
+                }, 500);
+
+            }, 500);
+          $("#chatbox").append(raspuns);
+
+          var div1 = document.getElementById("textInput_id");
+          div1.style.display = "none";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+          var div1 = document.getElementById("userInput2");
+          div1.style.display = "block";
+              if (div1.style.display !== "none") {
+                  div1.style.display = "none";
+              }
+              else {
+                  div1.style.display = "block";
+              }
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button onclick="discutie()">Pošalji</button>';
+            $("#userInput3").append(noubtn);*/
+        }
+
+        function conv3() {
+          var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+          var rawText1 = "Radim kao frilenser!";
+          var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText1 ;
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+
+          var raspuns = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages6">' + 'KSAJBOT kuca...' + '</span></p>';
+            setTimeout(function(){
+                $('#messages6').html('KSAJBOT: Lepo, lepo! Kako napreduje?');
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages62"></span></p></div>';
+                $('#chatbox').append(add);
+                $('#messages62').html('KSAJBOT kuca...');
+                setTimeout(function () {
+                    $('#messages62').html('KSAJBOT: Slušajte. Drago mi je zbog svega, ali bih želeo/la da počnemo sa radom.');
+                    var add2 = '<div class="botText"><p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"> <span id="messages63"></span></p></div>';
+                    $('#chatbox').append(add2);
+                    $('#messages63').html('KSAJBOT kuca...');
+                    setTimeout(function () {
+                        $('#messages63').html('KSAJBOT: Spremni?');
+                        var hint1 = '<p class="hintText"><span>' + 'Pomoć: ukucajte DA ili NE' + '</span></p>';
+                        $("#chatbox").append(hint1);
+                    }, 500);
+                }, 500);
+
+            }, 500);
+          $("#chatbox").append(raspuns);
+
+          var div1 = document.getElementById("textInput_id");
+          div1.style.display = "none";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+          var div1 = document.getElementById("userInput2");
+          div1.style.display = "block";
+              if (div1.style.display !== "none") {
+                  div1.style.display = "none";
+              }
+              else {
+                  div1.style.display = "block";
+              }
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button onclick="discutie()">Pošalji</button>';
+            $("#userInput3").append(noubtn);*/
+        }
+
+        function discutie() {
+            var datatimp = new Date();
+            var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+            $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+
+            $.get("/razgovor", {msg: rawText}).done(function (data) {
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages10a">' + 'KSAJBOT kuca...' + '</span></p>';
+                setTimeout(function() {
+                    $('#messages10a').html('KSAJBOT: ' + data);
+                    if(rawText.toLowerCase().localeCompare("da")!=0){
+                        document.getElementById('btn_2consMess').setAttribute('onclick','decizie_finala()');
+                        /*var noubtn_da = '<button onclick="decizie_finala()">Pošalji</button>';
+                        $("#userInput4").append(noubtn_da);*/
+
+                    var div1 = document.getElementById("userInput3");
+                    div1.style.display = "block";
+                      if (div1.style.display !== "none") {
+                          div1.style.display = "none";
+                      }
+                      else {
+                          div1.style.display = "block";
+                      }
+                }
+                else{
+                    var div1 = document.getElementById("userInput3");
+                    div1.style.display = "block";
+                      if (div1.style.display !== "none") {
+                          div1.style.display = "none";
+                      }
+                      else {
+                          div1.style.display = "block";
+                      }
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_noua()');
+                    /*var noubtnn = '<button onclick="discutie_noua()">Pošalji</button>';
+                    $("#userInput6").append(noubtnn);*/
+                }
+                }, 500);
+
+                $("#chatbox").append(botHtml);
+            });
+        }
+
+        function decizie_finala() {
+          var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+
+            if(rawText.toLowerCase().localeCompare("da")!=0){
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages11a">' + 'KSAJBOT kuca...' + '</span></p>';
+                setTimeout(function() {
+                    $('#messages11a').html('KSAJBOT: Ovde se razgovor završava. Za više detalja, restartujte aplikaciju ili refrešujte stranicu, ili, pak, ' +
+                        'kontaktirajte Diogen, mog šefa. Želim Vam prijatan ostatak dana!');
+                    var div1 = document.getElementById("userInput4");
+                    div1.style.display = "block";
+                    if (div1.style.display !== "none") {
+                        div1.style.display = "none";
+                    } else {
+                        div1.style.display = "block";
+                    }
+
+                    var div1 = document.getElementById("textInput_id");
+                    div1.style.display = "block";
+                    if (div1.style.display !== "none") {
+                        div1.style.display = "none";
+                    } else {
+                        div1.style.display = "block";
+                    }
+                }, 1000);
+                $("#chatbox").append(botHtml);
+            }
+            else{
+                var div1 = document.getElementById("userInput3");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                var div1 = document.getElementById("userInput4");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                $.get("/razgovor", {msg: rawText}).done(function (data) {
+                    var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages12">' + 'KSAJBOT kuca...' + '</span></p>';
+                    setTimeout(function() {
+                        $('#messages12').html('KSAJBOT: ' + data);
+
+                    }, 2000);
+                    $("#chatbox").append(botHtml);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_noua()');
+                    /*var noubtnn = '<button onclick="discutie_noua()">Pošalji</button>';
+                    $("#userInput6").append(noubtnn);*/
+                });
+            }
+        }
+
+        function decizie_finala2() {
+             var datatimp = new Date();
+          var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+          $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+
+            if(rawText.toLowerCase().localeCompare("da")!=0){
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages11a">' + 'KSAJBOT kuca...' + '</span></p>';
+                setTimeout(function() {
+                    $('#messages11a').html('KSAJBOT: Ovde se razgovor završava. Za više detalja, restartujte aplikaciju ili refrešujte stranicu, ili, pak, ' +
+                        'kontaktirajte Diogen, mog šefa. Želim Vam prijatan ostatak dana!');
+                    var div1 = document.getElementById("userInput4");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                var div1 = document.getElementById("textInput_id");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+                }, 3000);
+                $("#chatbox").append(botHtml);
+            }
+            else{
+                var div1 = document.getElementById("userInput3");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                var div1 = document.getElementById("userInput4");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                $.get("/izmene", {msg: rawText}).done(function (data) {
+                    var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span id="messages12">' + 'KSAJBOT kuca...' + '</span></p>';
+                    setTimeout(function() {
+                        $('#messages12').html('KSAJBOT: ' + data);
+
+                    }, 4000);
+                    $("#chatbox").append(botHtml);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+                    /*var noubtnn = '<button onclick="discutie_ref1()">Pošalji</button>';
+                    $("#userInput5").append(noubtnn);*/
+                });
+            }
+        }
+
+        function discutie_noua() {
+             var datatimp = new Date();
+            var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+            $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+            $.get("/dobitak", {msg: rawText}).done(function (data) {
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span>' + 'KSAJBOT: ' + data + '</span></p>';
+                $("#chatbox").append(botHtml);
+            });
+            if(rawText.toLowerCase().localeCompare("exit")==0){
+                var div1 = document.getElementById("userInput6");
+                div1.style.display = "block";
+                  if (div1.style.display !== "block") {
+                      div1.style.display = "block";
+                  }
+                  else {
+                      div1.style.display = "none";
+                  }
+
+                var div1 = document.getElementById("textInput_id");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+            }
+        }
+
+        function ref1() {
+             var datatimp = new Date();
+             var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+            $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+
+            $.get("/izmene", {msg: rawText}).done(function (data) {
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span>' + 'KSAJBOT: ' + data + '</span></p>';
+                $("#chatbox").append(botHtml);
+
+            });
+
+            if(rawText.toLowerCase().localeCompare("da")!=0){
+                document.getElementById('btn_2consMess').setAttribute('onclick','decizie_finala2()');
+                /*var noubtn_da = '<button onclick="decizie_finala2()">Pošalji</button>';
+                $("#userInput4").append(noubtn_da);*/
+
+                var div1 = document.getElementById("botText_n1");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+            }
+            else{
+                var div1 = document.getElementById("botText_n1");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+                document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+                /*var noubtnn = '<button onclick="discutie_ref1()">Pošalji</button>';
+                $("#userInput5").append(noubtnn);*/
+            }
+        }
+
+        function discutie_ref1() {
+            var datatimp = new Date();
+            var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+            $("#chatbox").append(variab);
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>' + 'TI: ' + rawText ;
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+            $.get("/detekcija", {msg: rawText}).done(function (data) {
+                var botHtml = '<p class="botText"><img src="static/media/chatbotfin.ico" width="40" height="20"><span>' + 'KSAJBOT: ' + data + '</span></p>';
+                $("#chatbox").append(botHtml);
+            });
+            var div1 = document.getElementById("userInput6");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+            /*var noubtnn = '<button onclick="discutie_ref1()">Pošalji</button>';
+            $("#userInput6").append(noubtnn);*/
+
+            if (rawText.toLowerCase().localeCompare("q")==0){
+
+                var div1 = document.getElementById("userInput5");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+
+                var div1 = document.getElementById("textInput_id");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
+            }
+	    }
+      </script>
+    </div>
+    </div>
+
+  <div style="background-color: lightgoldenrodyellow">
+  <hr>
+  <hr>
+  <footer class="footer">
+    <div class="container-fluid">
+        <nav>
+            <p class="copyright text-center">
+                Signal, Image and Machine Learning Team, SIMT <br/>
+                West University of Timisoara, Computer Science <br/>
+                This app was developed by Diogen Babuc with <br/>
+                the support and supervision of Dr. Darian M. Onchis
+            </p>
+        </nav>
+    </div>
+  </footer>
+    <hr>
+    <hr>
+  </div>
+  </body>
+</html>
